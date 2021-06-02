@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?edbb4t');
+  src:  url('fonts/icomoon.eot?edbb4t#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?edbb4t') format('truetype'),
+    url('fonts/icomoon.woff?edbb4t') format('woff'),
+    url('fonts/icomoon.svg?edbb4t#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-trimite:before {
+  content: "\e900";
+}
+.icon-liciteaza-fill:before {
+  content: "\e901";
+}
+.icon-liciteaza:before {
+  content: "\e902";
+}
+.icon-negociaza-fill:before {
+  content: "\e903";
+}
+.icon-negociaza:before {
+  content: "\e904";
+}
+.icon-enter:before {
+  content: "\e905";
+}
+.icon-fill-search:before {
+  content: "\e906";
+}
+.icon-semn-cont:before {
+  content: "\e91c";
+}
+.icon-semn:before {
+  content: "\e91d";
+}
+.icon-semn-meniu:before {
+  content: "\e91e";
+}
+.icon-pict:before {
+  content: "\e909";
+}
+.icon-digi:before {
+  content: "\e90a";
+}
+.icon-artiz:before {
+  content: "\e90b";
+}
+.icon-sculp:before {
+  content: "\e90c";
+}
+.icon-personaliz:before {
+  content: "\e90d";
+}
+.icon-bani:before {
+  content: "\e90e";
+}
+.icon-pictura:before {
+  content: "\e90f";
+}
+.icon-locatie:before {
+  content: "\e910";
+}
+.icon-transport:before {
+  content: "\e911";
+}
+.icon-arta-digitala:before {
+  content: "\e912";
+}
+.icon-artizanat:before {
+  content: "\e913";
+}
+.icon-durata-transport:before {
+  content: "\e914";
+}
+.icon-cauta:before {
+  content: "\e915";
+}
+.icon-parola:before {
+  content: "\e916";
+}
+.icon-personalizare:before {
+  content: "\e917";
+}
+.icon-rating:before {
+  content: "\e918";
+}
+.icon-sculptura:before {
+  content: "\e919";
+}
+.icon-sorteaza:before {
+  content: "\e91a";
+}
+.icon-special:before {
+  content: "\e91b";
+}
+.icon-sgdreapta:before {
+  content: "\e907";
+}
+.icon-sgstanga:before {
+  content: "\e908";
+}
+.icon-logo:before {
+  content: "\e91f";
+}
+.icon-cont:before {
+  content: "\e920";
+}
+.icon-cos:before {
+  content: "\e921";
+}
+.icon-plus:before {
+  content: "\e922";
+}
+.icon-artist:before {
+  content: "\e923";
+}
+.icon-galerie:before {
+  content: "\e924";
+}
+.icon-home:before {
+  content: "\e925";
+}
+.icon-pencil2:before {
+  content: "\e926";
+}
+.icon-quill:before {
+  content: "\e927";
+}
+.icon-droplet:before {
+  content: "\e928";
+}
+.icon-image:before {
+  content: "\e929";
+}
+.icon-images:before {
+  content: "\e92a";
+}
+.icon-file-picture:before {
+  content: "\e92b";
+}
+.icon-folder:before {
+  content: "\e92f";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-folder-plus:before {
+  content: "\e931";
+}
+.icon-folder-minus:before {
+  content: "\e932";
+}
+.icon-folder-download:before {
+  content: "\e933";
+}
+.icon-folder-upload:before {
+  content: "\e934";
+}
+.icon-star-half:before {
+  content: "\e9d8";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-google2:before {
+  content: "\ea89";
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}

@@ -1,0 +1,357 @@
+@import "../../SCSS-imports/culori";
+@import "../../SCSS-imports/extend";
+@import "../../SCSS-imports/responsive";
+@import "../../SCSS-imports/dimensiuni";
+
+* {
+  @extend %reset;
+}
+body {
+  @extend %body;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  min-height: calc(100% - 5.8rem);
+  height: fit-content;
+}
+
+div.content-main {
+  div {
+    &.fill-vns {
+      min-width: 7rem;
+      width: 7rem;
+      height: 100%;
+      background-color: $background;
+    }
+    &.vertical-nav-sortare {
+      z-index: 100;
+      position: fixed;
+      width: 7rem;
+      min-width: 7rem;
+      height: calc(100vh - 10.6rem);
+      background-color: $header;
+      display: flex;
+      align-items: center;
+      div {
+        &.v-n-s {
+          position: relative;
+          width: $H-header-fill;
+          height: 50rem;
+          min-height: 50rem;
+          background-color: $header;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $header;
+          // position: fixed;
+
+          ul {
+            &.v-n-s-links {
+              position: relative;
+              top: 0;
+              list-style: none;
+              height: fit-content;
+              display: grid;
+              grid-template-columns: 2rem 4rem 2rem;
+              grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
+              gap: 2rem 0;
+              grid-template-areas:
+                ". search drS"
+                ". sort drSort"
+                ". rating drR"
+                ". bani drB"
+                ". transp drT"
+                ". timp drTimp"
+                ". special drSpec"
+                ". locatie drL";
+              li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s;
+
+                &.v-n-v-link {
+                  width: $W-icons-header;
+                  height: $H-icons-header;
+                  font-size: $font-size-icons-header;
+                  color: $separator;
+                  border: $border-icons-header solid $separator;
+                  border-radius: $border-icons-radius-header;
+                  cursor: pointer;
+                  &:hover {
+                    background-color: $tonInchis;
+                    color: $alb;
+                  }
+                  &.active {
+                    background-color: $ton;
+                    color: $alb;
+                  }
+                }
+                &.v-n-v-sageti {
+                  font-size: $font-size-icons-header;
+                  opacity: 0;
+                  color: $separator;
+                  transition: all 0.5s;
+                  &.active {
+                    opacity: 1;
+                    transform: rotateY(180deg);
+                  }
+                }
+
+                &.vns-cauta {
+                  grid-area: search;
+                }
+                &.vns-sorteaza {
+                  grid-area: sort;
+                }
+                &.vns-rating {
+                  grid-area: rating;
+                }
+                &.vns-bani {
+                  grid-area: bani;
+                }
+                &.vns-transport {
+                  grid-area: transp;
+                  font-size: 1.9rem;
+                }
+                &.vns-timp {
+                  grid-area: timp;
+                }
+                &.vns-special {
+                  grid-area: special;
+                }
+                &.vns-locatie {
+                  grid-area: locatie;
+                }
+
+                &.vns-cauta-SGD {
+                  grid-area: drS;
+                }
+                &.vns-sorteaza-SGD {
+                  grid-area: drSort;
+                }
+                &.vns-rating-SGD {
+                  grid-area: drR;
+                }
+                &.vns-bani-SGD {
+                  grid-area: drB;
+                }
+                &.vns-transport-SGD {
+                  grid-area: drT;
+                }
+                &.vns-timp-SGD {
+                  grid-area: drTimp;
+                }
+                &.vns-special-SGD {
+                  grid-area: drSpec;
+                }
+                &.vns-locatie-SGD {
+                  grid-area: drL;
+                }
+              }
+            }
+          }
+          div.v-n-s-hidden {
+            position: absolute;
+            top: 2rem;
+            left: 6.5rem;
+            display: grid;
+            grid-template-columns: 7rem;
+            grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
+            gap: 2rem 0;
+            align-items: center;
+
+            div {
+              position: relative;
+              width: 0rem;
+              height: fit-content;
+              z-index: 130;
+              min-height: fit-content;
+              overflow: hidden;
+              transition: all 0.5s;
+
+              div {
+                &.border-left {
+                  position: relative;
+                  height: fit-content;
+                  width: 28rem;
+                  border-radius: 1rem 0 0 1rem;
+                  background-color: $separator;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                  p {
+                    width: 80%;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    padding: 0.5rem;
+                    color: $alb;
+                    cursor: pointer;
+                    border-radius: 0.4rem;
+                    &:hover {
+                      background-color: $ton;
+                    }
+                  }
+                  input {
+                    position: relative;
+                    width: 80;
+                    margin-bottom: 0.5rem;
+                  }
+                  div.vns-separator {
+                    width: 80%;
+                    height: 0.15rem;
+                    background-color: $tonDeschis;
+                    border-radius: 100%;
+                  }
+                  div.vns-zile {
+                    height: 5rem;
+                    width: 80%;
+                    background-color: $tonInchis;
+                    margin: 0.5rem 0rem;
+                  }
+                  div.vns-pret-intre {
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    height: 4rem;
+                    input {
+                      width: 9rem;
+                    }
+                  }
+                  div.vns-rating {
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: fit-content;
+                    span {
+                      width: fit-content;
+                      height: fit-content;
+                      font-size: 2.8rem;
+                      padding: 1rem 0.5rem;
+                      color: $tonDeschis;
+                    }
+                  }
+                }
+                &.enter-right-container {
+                  height: 100%;
+                  width: 2rem;
+                  position: absolute;
+                  background-color: $tonInchis;
+                  right: 0;
+                  top: 0;
+                  border-radius: 0rem 1rem 1rem 0rem;
+                  color: $separator;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &:hover {
+                    color: $alb;
+                  }
+                }
+              }
+              &.vns-hidden-item {
+                transition: all 0.5s;
+                opacity: 0;
+                &.active {
+                  opacity: 1;
+                  width: 30rem;
+                }
+              }
+              &.vns-cauta-hidden {
+                input {
+                  width: 90%;
+                  height: 3rem;
+                  margin-top: 1rem;
+                  margin-bottom: rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // &.info-bar {
+    //   min-width: $H-header-fill;
+    //   width: 10%;
+    //   height: 100%;
+    //   background-color: lightpink;
+    // }
+  }
+}
+
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-cauta:hover
+  ~ li.vns-cauta-SGD {
+  opacity: 1;
+}
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-sorteaza:hover
+  ~ li.vns-sorteaza-SGD {
+  opacity: 1;
+}
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-rating:hover
+  ~ li.vns-rating-SGD {
+  opacity: 1;
+}
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-bani:hover
+  ~ li.vns-bani-SGD {
+  opacity: 1;
+}
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-transport:hover
+  ~ li.vns-transport-SGD {
+  opacity: 1;
+}
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-timp:hover
+  ~ li.vns-timp-SGD {
+  opacity: 1;
+}
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-special:hover
+  ~ li.vns-special-SGD {
+  opacity: 1;
+}
+main
+  div.content-main
+  div.vertical-nav-sortare
+  div.v-n-s
+  ul.v-n-s-links
+  li.vns-locatie:hover
+  ~ li.vns-locatie-SGD {
+  opacity: 1;
+}

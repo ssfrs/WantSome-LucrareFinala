@@ -1,0 +1,37 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/responsive";
+@import "../SCSS-imports/dimensiuni";
+
+@media only screen and (max-width: $telefon) {
+  // [class*="col-"] {
+  //   width: 100%;
+  // }
+  main {
+    min-height: 450px;
+    min-width: 200px;
+    overflow: auto;
+    div.login {
+      width: 100%;
+      border-radius: 2mm;
+      div.formLogo {
+        padding: 10px 0px 0px 0px;
+        font-size: 15mm;
+      }
+      form.formular {
+        padding: 5px 20px 25px 20px;
+        a {
+          &.forgotPass {
+            display: block;
+            left: 0;
+            margin-top: 2mm;
+          }
+        }
+        button {
+          margin: 0px 0px 0px 0px;
+        }
+      }
+    }
+  }
+}
+

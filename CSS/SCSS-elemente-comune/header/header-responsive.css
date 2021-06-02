@@ -1,0 +1,101 @@
+@media screen and (max-width: 768px) {
+  header nav.nav-header {
+    width: 85%;
+    grid-gap: 0rem;
+    -ms-grid-columns: 10% auto 10% 10% 10% 10% auto 10%;
+        grid-template-columns: 10% auto 10% 10% 10% 10% auto 10%;
+    -ms-grid-rows: 100% 100%;
+        grid-template-rows: 100% 100%;
+        grid-template-areas: "logo logo midMenu midMenu midMenu midMenu x x" "search search search search rightMenu rightMenu rightMenu rightMenu";
+  }
+  header nav.nav-header div.logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header nav.nav-header div.logo:hover {
+    font-size: 3.7rem;
+  }
+  header nav.nav-header div.responsive-element {
+    display: none;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: search;
+  }
+  header nav.nav-header div.responsive-element.r-e-changeses {
+    display: inherit;
+  }
+  header nav.nav-header div.responsive-element div.search-extend {
+    background-color: #2b2b2b;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+  header nav.nav-header div.responsive-element div.search-extend div.input {
+    top: 1.3rem;
+  }
+  header nav.nav-header div.responsive-element div.search-extend div.input div.input-text {
+    left: 0.4rem;
+    width: calc(100% - 0.6rem);
+  }
+  header nav.nav-header div.responsive-element div.search-extend div.icon-search {
+    top: 0.1rem;
+  }
+  header nav.nav-header div.hamburgher {
+    display: inherit;
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2;
+    grid-area: x;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 1rem;
+    top: -0.8rem;
+  }
+  header nav.nav-header ul.menu-bar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-area: midMenu;
+  }
+  header nav.nav-header ul.responsive-element {
+    display: none;
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: rightMenu;
+    justify-self: flex-end;
+    background-color: #2b2b2b;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+  header nav.nav-header ul.responsive-element.r-e-changeses {
+    display: inherit;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+  header nav.nav-header {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  html {
+    font-size: 7px;
+  }
+  header nav.nav-header {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=header-responsive.css.map */

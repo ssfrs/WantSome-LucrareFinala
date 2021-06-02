@@ -1,0 +1,220 @@
+@import "../../SCSS-imports/culori";
+@import "../../SCSS-imports/extend";
+@import "../../SCSS-imports/responsive";
+@import "../../SCSS-imports/dimensiuni";
+
+* {
+  @extend %reset;
+}
+body {
+  @extend %body;
+}
+main {
+  div.content-main {
+    top: 6.4rem;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: -1rem;
+    display: flex;
+
+    div.produse {
+      width: calc(100% - 7rem);
+      margin: 0 auto;
+      max-width: 170rem;
+      height: fit-content;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem));
+      grid-gap: 0rem;
+      grid-auto-flow: dense;
+      padding: 1rem 5rem 1rem 5rem;
+      justify-content: center;
+
+      div.produs {
+        color: $alb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+          &.element {
+            position: relative;
+            width: calc(100% - 0.5rem);
+            height: calc(100% - 0.5rem);
+            background-color: rgb(23, 116, 85);
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0.2rem 0.2rem 0.7rem -0.3rem $header;
+            &:hover {
+              div.card-meniu {
+                opacity: 1;
+              }
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 0.5s ease;
+              cursor: pointer;
+            }
+            div.card-meniu {
+              opacity: 0;
+              transition: all 0.4s;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: rgb(0, 0, 0);
+              background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.9056664902289041) 5%,
+                rgba(0, 0, 0, 0) 40%,
+                rgba(0, 0, 0, 0) 100%
+              );
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 5rem auto 2rem 5rem;
+              grid-template-areas:
+                "icon-new icon-discount . icon-like"
+                ". . . ."
+                "nume-si-renume nume-si-renume nume-si-renume nume-si-renume"
+                "info-pret info-pret buton-cumpara buton-cumpara";
+
+              div {
+                &.icon {
+                  width: 4rem;
+                  height: 4rem;
+                  background-color: $tonDeschis;
+                  border-radius: 2rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: 0.5rem;
+                  justify-self: center;
+                  align-self: center;
+                  box-shadow: 0 0 0.5rem 0 $header;
+                  overflow: hidden;
+                  h2 {
+                    width: fit-content;
+                    color: $negru;
+                    font-size: 1.3rem;
+                  }
+                  &.icon-new {
+                    grid-area: icon-new;
+                    h2 {
+                      color: $alb;
+                      width: 100%;
+                      background-color: $header;
+                      text-align: center;
+                      padding: 0.3rem 0;
+                    }
+                  }
+                  &.icon-discount {
+                    grid-area: icon-discount;
+                  }
+                  &.icon-like {
+                    grid-area: icon-like;
+                    &.icon-like-active {
+                      span {
+                        color: red;
+                      }
+                    }
+                    span {
+                      color: $separator;
+                      font-size: 2rem;
+                    }
+                  }
+                }
+                &.nume-si-renume {
+                  grid-area: nume-si-renume;
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  text-shadow: 0 0 0.5rem $negru;
+
+                  h1 {
+                    font-size: 1.2rem;
+                    width: fit-content;
+                  }
+                  p {
+                    font-size: 0.9rem;
+                    width: fit-content;
+                    span {
+                      font-weight: bold;
+                    }
+                  }
+                }
+
+                &.info-pret {
+                  position: relative;
+                  grid-area: info-pret;
+                  background-color: $tonDeschis;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  margin: 0.5rem;
+                  border-radius: 2.5rem;
+                  color: $negru;
+                  span {
+                    font-weight: bold;
+
+                    &#pret-vechi {
+                      text-decoration: line-through;
+                      position: absolute;
+                      top: 0;
+                    }
+                    &#pret {
+                      font-size: 2.3rem;
+                    }
+                    &.valuta {
+                      position: absolute;
+                      bottom: 0;
+                    }
+                  }
+                }
+              }
+              button.buton-cumpara {
+                grid-area: buton-cumpara;
+                border: none;
+                position: relative;
+                background-color: $tonDeschis;
+                margin: 0.5rem;
+                border-radius: 2.5rem;
+                color: $negru;
+                font-weight: bold;
+                font-size: 1.7rem;
+                transition: all 0.3s;
+                &:hover {
+                  background-color: $header;
+                  color: $alb;
+                  border: 0.1rem solid $alb;
+                }
+              }
+            }
+          }
+        }
+
+        &.mic {
+          grid-row-end: span 1;
+          height: 25rem;
+        }
+        &.mijlociu {
+          grid-row-end: span 2;
+          height: 50rem;
+        }
+        &.mare {
+          grid-row-end: span 3;
+          height: 75rem;
+        }
+        &.patrat {
+          grid-row-end: span 2;
+          grid-column-end: span 2;
+          height: 50rem;
+        }
+      }
+    }
+  }
+}

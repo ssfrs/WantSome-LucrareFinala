@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS HEADER -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/header/header.css">
+    <!-- CSS HEADER - responsive -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/header/header-responsive.css">
+    <!-- CSS Meniu de sortare principal -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/main-nav-sortare/main-nav-sortare.css">
+    <!-- CSS Meniu de sortare secundar - vertical - stanga -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/main-vertical-nav-sortare/vertical-nav-sortare.css">
+    <!-- CSS afisare produse -->
+    <link rel="stylesheet" href="css/SCSS-elemente-comune/main-produse/main-produse.css">
+    <!-- CSS Afisare Produse Responsive -->
+    <link rel="stylesheet" href="css/SCSS-elemente-comune/main-produse/main-produse-responsive.css">
+    <!-- CSS Fonturi -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ALTELE\icons\style.css">
+    <title>Galery</title>
+</head>
+<body>
+<!-- START - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+    <div class="top-header-fill"></div>
+<!-- END - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+<!-- START - Header -->
+    <header>
+        <nav class="nav-header">
+                <div class="logo">
+                    <a href="contul-meu.html"><span class="icon-logo"></span></a>
+                </div>
+                <div id="search" class="responsive-element">
+                    <div id="search-extend" class="search-extend">
+                        <div class="icon-search">
+                            <div class="for-flex-fill">
+                                <span class="icon-fill-search"></span>
+                                <span class="icon-cauta"></span>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="input-text">
+                                <input type="text" placeholder="Search" id="mysearch">
+                            </div>
+                            <div class="clear" onclick="document.getElementById('mysearch').value = ''">
+                                <span class="icon-enter"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <ul class="menu-bar">
+                <li class="home mid-menu-link">
+                    <a class="home" href="index.html"><span class="icon-home"></span></a>
+                </li>
+                <li class="galery mid-menu-link container-header-activ">
+                    <a class="galery link-header-activ" href="galerie.html"><span class="icon-galerie"></span></a>
+                </li>
+                <li class="artist mid-menu-link">
+                    <a class="artist" href="artisti.html"><span class="icon-artist"></span></a>
+                </li>
+
+                <li id="semnHome" class="semn-home semn-header" ><span class="icon-semn-meniu"></span></li>
+                <li id="semnGalerie" class="semn-galerie semn-header semn-header-activ"><span class="icon-semn-meniu"></span></li>
+                <li id="semnArtist" class="semn-artist semn-header"><span class="icon-semn-meniu"></span></li>
+            </ul>
+            <div class="hamburgher">
+                <div id="hamburgher">
+                    <div class="burger" id="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="responsive-element" id="right-bar">
+                <li class="add-acount head-bar-r">
+                    <a href="singup.html"><span class="icon-plus"></span></a>
+                </li>
+                <li class="my-acount head-bar-r">
+                    <a href="log-in.html"><span class="icon-cont"></span></a>
+                </li>
+                <li class="cart head-bar-r">
+                    <a href="cos-de-cumparaturi.html"><span class="icon-cos"></span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="separator"></div>
+    </header>
+<!-- END - Header -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+<!-- START - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+    <section class="header-fill"></section>
+<!-- END - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+
+    <main>
+<!-- START - Navigator sortare -->
+        <nav class="nav-sortare">
+            <ul class="elemente-nav-sortare">
+                <li class="special link-nav-sortare container-nav-sortare-activ">
+                    <a class="element-nav-sortare buton-nav-sortare-activ" data-id="1" href=""><span data-id="1" class="icon-special"></span></a>
+                </li>
+                <li class="pict link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="2" href=""><span data-id="2" class="icon-pict"></span></a>
+                </li>
+                <li class="digi link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="3" href=""><span data-id="3" class="icon-digi"></span></a>
+                </li>
+                <li class="artiz link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="4" href=""><span data-id="4" class="icon-artiz"></span></a>
+                </li>
+                <li class="sculp link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="5" href=""><span data-id="5" class="icon-sculp"></span></a>
+                </li>
+                <li class="personaliz link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="6" href=""><span data-id="6" class="icon-personaliz"></span></a>
+                </li>
+
+                <li class="semn-nav-sortare semn-special semn-nav-sortare-activ"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-pict"><span class="icon-semn"></span></;>
+                <li class="semn-nav-sortare semn-digi"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-artiz"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-sculp"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-personaliz"><span class="icon-semn"></span></li>
+            </ul>
+        </nav>
+<!-- END - Navigator sortare -->
+
+        <div class="content-main">
+            
+            <div class="fill-vns"></div>
+
+<!-- Start - Navigator Vertical sortare -->
+
+            <div class="vertical-nav-sortare">
+                <div class="v-n-s">
+                    <ul class="v-n-s-links">
+
+<!-- Start - Butoane - linkuri -->
+
+                        <li class="v-n-v-link vns-cauta"><span class="icon-cauta"></span></li>
+                        <li class="v-n-v-link vns-sorteaza"><span class="icon-sorteaza"></span></li>
+                        <li class="v-n-v-link vns-rating"><span class="icon-rating"></span></li>
+                        <li class="v-n-v-link vns-bani"><span class="icon-bani"></span></li>
+                        <li class="v-n-v-link vns-transport"><span class="icon-transport"></span></li>
+                        <li class="v-n-v-link vns-timp"><span class="icon-durata-transport"></span></li>
+                        <li class="v-n-v-link vns-special"><span class="icon-special"></span></li>
+                        <li class="v-n-v-link vns-locatie"><span class="icon-locatie"></span></li>
+<!-- END - Butoane - linkuri -->
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!-- Start - Sageti butoane -->
+                        <li class="v-n-v-sageti vns-cauta-SGD"><span class="icon-sgdreapta"></span></li>
+                        <li class="v-n-v-sageti vns-sorteaza-SGD"><span class="icon-sgdreapta"></span></li>
+                        <li class="v-n-v-sageti vns-rating-SGD"><span class="icon-sgdreapta"></span></li>
+                        <li class="v-n-v-sageti vns-bani-SGD"><span class="icon-sgdreapta"></span></li>
+                        <li class="v-n-v-sageti vns-transport-SGD"><span class="icon-sgdreapta"></span></li>
+                        <li class="v-n-v-sageti vns-timp-SGD"><span class="icon-sgdreapta"></span></li>
+                        <li class="v-n-v-sageti vns-special-SGD"><span class="icon-sgdreapta"></span></li>
+                        <li class="v-n-v-sageti vns-locatie-SGD"><span class="icon-sgdreapta"></span></li>
+<!-- END - Sageti butoane -->
+
+                    </ul>
+
+<!-- Start - Meniurile ascunse pentru butoanele de sortare -->
+
+                    <div class="v-n-s-hidden">
+                        <div class="vns-hidden-item vns-cauta-hidden">
+                            <div class="border-left">
+                                    <input type="text" placeholder="Search" id="mysearchx">
+                            </div>
+                            <div class="enter-right-container" onclick="document.getElementById('mysearchx').value = ''">
+                                <span class="icon-enter"></span>
+                            </div>
+                        </div>
+                        <div class="vns-hidden-item vns-sorteaza-hidden">
+                            <div class="border-left">
+                                <p>Preț crescător</p>
+                                <div class="vns-separator"></div>
+                                <p>Preț descrescător</p>
+                                <div class="vns-separator"></div>
+                                <p>Cele mai noi</p>
+                                <div class="vns-separator"></div>
+                                <p>Discount</p>
+                                <div class="vns-separator"></div>
+                                <p>Relevanță</p>
+                            </div>
+                            <div class="enter-right-container"><span class="icon-enter"></span></div>
+                        </div>
+                        <div class="vns-hidden-item vns-rating-hidden">
+                            <div class="border-left">
+                                <p>Rating minim al artiștilor</p>
+                                <div class="vns-separator"></div>
+                                <div class="vns-rating">
+                                    <span class="icon-rating"></span>
+                                    <span class="icon-rating"></span>
+                                    <span class="icon-rating"></span>
+                                    <span class="icon-rating"></span>
+                                    <span class="icon-rating"></span>
+                                </div>
+                            </div>
+                            <div class="enter-right-container"><span class="icon-enter"></span></div>
+                        </div>
+                        <div class="vns-hidden-item vns-bani-hidden">
+                            <div class="border-left">
+                                <p>Preț între:</p>
+                                <div class="vns-separator"></div>
+                                <div class="vns-pret-intre">
+                                    <input type="text">
+                                    <p>-/-</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="enter-right-container"><span class="icon-enter"></span></div>
+                        </div>
+                        <div class="vns-hidden-item vns-transport-hidden">
+                            <div class="border-left">
+                                <p>Livrare în:</p>
+                                <input type="text">
+                                <div class="vns-separator"></div>
+                                <p>Livrare gratuită</p>
+                                <div class="vns-separator"></div>
+                                <p>Predare personală</p>
+                                <div class="vns-separator"></div>
+                                <p>Prin curier</p>
+                                <div class="vns-separator"></div>
+                                <p>Prin postă</p>
+                            </div>
+                            <div class="enter-right-container"><span class="icon-enter"></span></div>
+                        </div>
+                        <div class="vns-hidden-item vns-timp-hidden">
+                            <div class="border-left">
+                                <p>Timp pentru expediere</p>
+                                <div class="vns-separator"></div>
+                                <div class="vns-zile"></div>
+                                <div class="vns-separator"></div>
+                                <p>in zile lucratoare</p>
+                            </div>
+                            <div class="enter-right-container"><span class="icon-enter"></span></div>
+                        </div>
+                        <div class="vns-hidden-item vns-special-hidden">
+                            <div class="border-left">
+                                <p>Pret fix</p>
+                                <div class="vns-separator"></div>
+                                <p>Pret licitat</p>
+                                <div class="vns-separator"></div>
+                                <p>Pret negociabil</p>
+                            </div>
+                            <div class="enter-right-container"><span class="icon-enter"></span></div>
+                        </div>
+                        <div class="vns-hidden-item vns-locatie-hidden">
+                            <div class="border-left">
+                                <p>Localizarea Produsului</p>
+                                <input type="text">
+                            </div>
+                            <div class="enter-right-container"><span class="icon-enter"></span></div>
+                        </div>
+                    </div>
+
+<!-- END - Meniul ascuns pentru butoanele de sortare -->
+
+                </div>
+            </div>
+<!-- END - Navigator Vertical sortare -->
+
+            <div class="produse">
+<!-- Produsul 1 -->
+                <div class="produs mic">
+                    <div class="element">
+                        <img src="img/paint12.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 2 -->
+                <div class="produs mare">
+                    <div class="element">
+                        <img src="img/craft1.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 3 -->
+                <div class="produs mijlociu">
+                    <div class="element">
+                        <img src="img/lantisor1.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like icon-like-active">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 4 -->
+                <div class="produs mic">
+                    <div class="element">
+                        <img src="img/lantisor2.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 5 -->
+                <div class="produs mijlociu">
+                    <div class="element">
+                        <img src="img/lantisor3.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 6 -->
+                <div class="produs mare">
+                    <div class="element">
+                        <img src="img/paint2.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like icon-like-active">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 7 -->
+                <div class="produs patrat">
+                    <div class="element">
+                        <img src="img/paint3.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like icon-like-active">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 8 -->
+                <div class="produs mic">
+                    <div class="element">
+                        <img src="img/sculptura1.jfif" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 9 -->
+                <div class="produs mijlociu">
+                    <div class="element">
+                        <img src="img/sculptura2.jfif" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 10 -->
+                <div class="produs mare">
+                    <div class="element">
+                        <img src="img/sculptura3.jpeg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 11 -->
+                <div class="produs mijlociu">
+                    <div class="element">
+                        <img src="img/sculptura1.jfif" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 12 -->
+                <div class="produs mijlociu">
+                    <div class="element">
+                        <img src="img/lantisor2.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- Produsul 13 -->
+                <div class="produs patrat">
+                    <div class="element">
+                        <img src="img/paint1.jpg" alt="numele-tabloului">
+                        <div class="card-meniu">
+                            <div class="icon icon-new">
+                                <h2>New</h2>
+                            </div>
+                            <div class="icon icon-discount">
+                                <h2>15%</h2>
+                            </div>
+                            <div class="icon icon-like icon-like-active">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="nume-si-renume">
+                                <h1 id="numele-tabloului">Numele Tabloului</h1>
+                                <p>design by <br><span id="nume-artist">Numele Artistului</span></p>
+                            </div>
+                            <div class="info-pret">
+                                <span id="pret-vechi"> 1800 </span>
+                                <span id="pret">1200</span>
+                                <span class="valuta">Lei</span>
+                            </div>
+                            <button class="buton-cumpara">Cumpără</button>
+                        </div>
+                    </div>
+                </div>
+<!-- END Produse -->
+            </div>
+        </div>
+ 
+    </main>
+    <script type="text/javascript" src="js/JS-elemente-comune/header-right-bar-responsive.js"></script>
+    <script type="text/javascript" src="js/JS-elemente-comune/search-box.js"></script>
+    <script type="text/javascript" src="js/JS-elemente-comune/vertical-nav-sortare.js"></script>
+</body>
+</html>

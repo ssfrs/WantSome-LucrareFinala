@@ -1,0 +1,122 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/responsive";
+@import "../SCSS-imports/dimensiuni";
+
+html {
+  font-size: 10px;
+}
+
+section.header-fill {
+  position: relative;
+  width: 100%;
+  height: $H-header-fill;
+  background-color: $separator;
+}
+
+
+main {
+  background-color: $background;
+  background-image: url("../../IMG/paint1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: calc(100% - 6.05rem);
+  min-height: 65rem;
+  margin: auto;
+  position: relative;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div.main-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    div.left-side {
+      width: 35rem;
+      height: 49rem;
+      background-color: $header;
+      border-top-left-radius: 3.8rem;
+      border-bottom-left-radius: 3.8rem;
+      box-shadow: 0 0 0.38rem 0 $separator;
+      div.formLogo {
+        text-align: center;
+        padding: 3rem 0 3rem 0;
+        position: relative;
+        font-size: 15rem;
+        color: $alb;
+      }
+    }
+    div.right-side {
+      width: 50rem;
+      height: 60rem;
+      background-color: $alb;
+      position: relative;
+      padding-top: 5rem;
+      box-shadow: 0 0 0.38rem 0 $separator;
+      border-radius: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      form.formular {
+        padding: 0.5rem 5rem 6.5rem 5rem;
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 1.1rem;
+        }
+        label {
+          font-size: 1.5rem;
+          &.date {
+            font-weight: bold;
+          }
+          &.date::after {
+            content: " *";
+            color: red;
+          }
+        }
+        input {
+          &.text {
+            width: 100%;
+            border-radius: 0.7rem;
+            padding: 1rem 0.5rem 1rem 0.5rem;
+            box-shadow: 0 0 0 0.1rem $header;
+            border: none;
+            margin-bottom: 1rem;
+            &:focus {
+              background-color: $tonDeschis;
+              outline: none;
+            }
+            &:hover {
+              background-color: $tonDeschis;
+            }
+            &::placeholder {
+              font-style: italic;
+              opacity: 30%;
+            }
+          }
+        }
+        button {
+          font-weight: bold;
+          width: 100%;
+          padding: 1.5rem 0 1.5rem 0;
+          margin: 2rem 0 0 0;
+          border-radius: 0.7rem;
+          border: 0.2rem solid $tonInchis;
+          color: $alb;
+          font-size: 1.8rem;
+          background-color: $tonInchis;
+          &:hover {
+            background-color: $contrast;
+            color: $negru;
+            border: 0.2rem solid $contrast;
+          }
+        }
+      }
+    }
+  }
+}

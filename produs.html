@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS HEADER -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/header/header.css">
+    <!-- CSS HEADER - responsive -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/header/header-responsive.css">
+    <!-- CSS Meniu de sortare principal -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/main-nav-sortare/main-nav-sortare.css">
+    <link rel="stylesheet" href="css/SCSS-produs/container-produs.css">
+    <!-- CSS Meniu de sortare secundar - vertical - stanga -->
+    <!-- <link rel="stylesheet" href="CSS/SCSS-elemente-comune/main-vertical-nav-sortare/vertical-nav-sortare.css"> -->
+    <!-- CSS Fonturi -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ALTELE\icons\style.css">
+    <title>Galery</title>
+</head>
+<body>
+<!-- START - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+    <div class="top-header-fill"></div>
+<!-- END - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+<!-- START - Header -->
+    <header>
+        <nav class="nav-header">
+                <div class="logo">
+                    <a href="contul-meu.html"><span class="icon-logo"></span></a>
+                </div>
+                <div id="search" class="responsive-element">
+                    <div id="search-extend" class="search-extend">
+                        <div class="icon-search">
+                            <div class="for-flex-fill">
+                                <span class="icon-fill-search"></span>
+                                <span class="icon-cauta"></span>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="input-text">
+                                <input type="text" placeholder="Search" id="mysearch">
+                            </div>
+                            <div class="clear" onclick="document.getElementById('mysearch').value = ''">
+                                <span class="icon-enter"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <ul class="menu-bar">
+                <li class="home mid-menu-link">
+                    <a class="home" href="index.html"><span class="icon-home"></span></a>
+                </li>
+                <li class="galery mid-menu-link container-header-activ">
+                    <a class="galery link-header-activ" href="galerie.html"><span class="icon-galerie"></span></a>
+                </li>
+                <li class="artist mid-menu-link">
+                    <a class="artist" href="artisti.html"><span class="icon-artist"></span></a>
+                </li>
+
+                <li id="semnHome" class="semn-home semn-header" ><span class="icon-semn-meniu"></span></li>
+                <li id="semnGalerie" class="semn-galerie semn-header semn-header-activ"><span class="icon-semn-meniu"></span></li>
+                <li id="semnArtist" class="semn-artist semn-header"><span class="icon-semn-meniu"></span></li>
+            </ul>
+            <div class="hamburgher">
+                <div id="hamburgher">
+                    <div class="burger" id="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="responsive-element" id="right-bar">
+                <li class="add-acount head-bar-r">
+                    <a href="singup.html"><span class="icon-plus"></span></a>
+                </li>
+                <li class="my-acount head-bar-r">
+                    <a href="log-in.html"><span class="icon-cont"></span></a>
+                </li>
+                <li class="cart head-bar-r">
+                    <a href="cos-de-cumparaturi.html"><span class="icon-cos"></span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="separator"></div>
+    </header>
+<!-- END - Header -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+<!-- START - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+    <section class="header-fill"></section>
+<!-- END - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+
+    <main>
+<!-- START - Navigator sortare -->
+        <nav class="nav-sortare">
+            <ul class="elemente-nav-sortare">
+                <li class="special link-nav-sortare container-nav-sortare-activ">
+                    <a class="element-nav-sortare buton-nav-sortare-activ" data-id="1" href=""><span data-id="1" class="icon-special"></span></a>
+                </li>
+                <li class="pict link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="2" href=""><span data-id="2" class="icon-pict"></span></a>
+                </li>
+                <li class="digi link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="3" href=""><span data-id="3" class="icon-digi"></span></a>
+                </li>
+                <li class="artiz link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="4" href=""><span data-id="4" class="icon-artiz"></span></a>
+                </li>
+                <li class="sculp link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="5" href=""><span data-id="5" class="icon-sculp"></span></a>
+                </li>
+                <li class="personaliz link-nav-sortare">
+                    <a class="element-nav-sortare" data-id="6" href=""><span data-id="6" class="icon-personaliz"></span></a>
+                </li>
+
+                <li class="semn-nav-sortare semn-special semn-nav-sortare-activ"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-pict"><span class="icon-semn"></span></;>
+                <li class="semn-nav-sortare semn-digi"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-artiz"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-sculp"><span class="icon-semn"></span></li>
+                <li class="semn-nav-sortare semn-personaliz"><span class="icon-semn"></span></li>
+            </ul>
+        </nav>
+<!-- END - Navigator sortare -->
+
+        <div class="content-main">
+            <div class="produs">
+                <div class="prezentare">
+                    <img src="img/paint12.jpg" alt="paint">
+                </div>
+                <div class="detalii">
+                    <h1 id="numele-tabloului">Numele Tabloului</h1>
+                    <p>design by <span id="nume-artist">Numele Artistului</span></p>
+                    <div class="spec-si-pret"> 
+                        <ul class="informatii-despre-lucrare">
+                            <li class="dimensiune">Dimensiune: 30cmx20cm (LxH);</li>
+                            <li class="tehnica">Tehnica: Pictura in ulei;</li>
+                            <li class="suport">Suport: Panza Canvas;</li>
+                        </ul>
+                        <div class="pret-si-tipul-vanzarii">
+                            <p class="pret-vechi">Pret vechi: <span id="pret-vechi">1800</span> <span class="valuta">Lei</span></p>
+                            <h2>Preț: <span id="pret">1200</span> <span class="valuta">Lei</span></h2>
+                            <p class="pret-metode">Pret: <span id="tipul-pretului">Negociabil</span></p>
+                        </div>
+                    </div> 
+                    <p class="scurta-descriere">So perhaps, you've generated some fancy text, and you're content that you can now copy and paste your fancy text in the comments section of funny cat videos, but perhaps you're wondering how it's even possible to change the font of your text? Is it some sort of hack? </p>
+                    <hr>
+                    <div class="carusel-vizualizare">
+                        <div class="prima-imagine"></div>
+                        <div class="a-doua-imagine"></div>
+                        <div class="a-treia-imagine"></div>
+                        <div class="a-patra-imagine"></div>
+                    </div>
+                    <hr>
+                    <div class="buton-cumpara">
+                        <div class="buton-logo-cumpara"><span class="icon-bani"></span></div>
+                        <div class="buton-logo-enter">
+                            <p class="buton-text-actiune">Cumpără</p>
+                            <div class="buton-logo-trimite">
+                                <span class="icon-trimite"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buton-negociaza">
+                        <div class="buton-logo-negociaza">
+                            <span class="icon-negociaza-fill"></span>
+                            <span class="icon-negociaza"></span>
+                        </div>
+                        <input id="negociaza" type="text" placeholder="Negociază">
+                        <div class="buton-logo-enter">
+                            <span class="icon-trimite"></span>
+                        </div>
+                    </div>
+                    <div class="buton-liciteaza">
+                        <div class="buton-logo-liciteaza">
+                            <span class="icon-liciteaza-fill"></span>
+                            <span class="icon-liciteaza"></span>
+                        </div>
+                        <input id="liciteaza" type="text" placeholder="Licitează">
+                        <div class="buton-logo-enter">
+                            <span class="icon-trimite"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bara-de-informatii"></div>
+        </div>
+ 
+    </main>
+    <script type="text/javascript" src="js/JS-elemente-comune/header-right-bar-responsive.js"></script>
+    <script type="text/javascript" src="js/JS-elemente-comune/search-box.js"></script>
+    <script type="text/javascript" src="js/JS-elemente-comune/vertical-nav-sortare.js"></script>
+</body>
+</html>

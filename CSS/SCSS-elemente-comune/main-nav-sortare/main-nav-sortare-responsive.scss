@@ -1,0 +1,17 @@
+@import "../../SCSS-imports/culori";
+@import "../../SCSS-imports/extend";
+@import "../../SCSS-imports/responsive";
+@import "../../SCSS-imports/dimensiuni";
+
+* {
+  @extend %reset;
+}
+body {
+  @extend %body;
+}
+// grid-gap: 2rem;
+@media screen and (max-width: $telefon-mic) {
+
+    
+
+}

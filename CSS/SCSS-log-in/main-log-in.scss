@@ -1,0 +1,122 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/responsive";
+@import "../SCSS-imports/dimensiuni";
+
+* {
+  @extend %reset;
+}
+body {
+  @extend %body;
+}
+
+main {
+  background-color: $background;
+  background-image: url("../../IMG/singuripealee.jpg");
+  background-size: cover;
+  width: 100%;
+  height: calc(100% - 5.8rem);
+  min-height: 600px;
+  position: relative;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div.login {
+    width: 500px;
+    background-color: $alb;
+    position: relative;
+    box-shadow: 0mm 0mm 1mm 0mm $separator;
+    border-radius: 10mm;
+    div.formLogo {
+      text-align: center;
+      padding: 30px 0px 20px 0px;
+      position: relative;
+      font-size: 25mm;
+    }
+    form.formular {
+      padding: 5px 50px 65px 50px;
+      a {
+        &.forgotPass {
+          color: $negru;
+          position: relative;
+          left: 28%;
+        }
+        &.singUp {
+          font-weight: bold;
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          width: 100%;
+          padding: 15px 0px 15px 0px;
+          margin: 20px 0px 0px 0px;
+          border-radius: 7px;
+          color: $negru;
+          font-size: 18px;
+          border: 1px solid $negru;
+          background-color: $alb;
+          &:hover {
+            background-color: $background;
+          }
+        }
+      }
+      label {
+        &.date {
+          font-weight: bold;
+        }
+        &.date::after {
+          content: " *";
+          color: red;
+        }
+        &.rem {
+          text-decoration: underline;
+        }
+      }
+      input {
+        &.text {
+          width: 100%;
+          border-radius: 7px;
+          padding: 10px 5px 10px 5px;
+          box-shadow: 0px 0px 0px 1px $header;
+          border: none;
+          &:focus {
+            background-color: $tonDeschis;
+            outline: none;
+          }
+          &:hover {
+            background-color: $tonDeschis;
+          }
+          &::placeholder {
+            font-style: italic;
+            opacity: 30%;
+          }
+        }
+        &#password {
+          margin: 0px 0px -5px 0px;
+        }
+        &#username {
+          margin: 0px 0px 20px 0px;
+        }
+        &#remember {
+          margin-top: 15px;
+          vertical-align: -2px;
+        }
+      }
+      button {
+        font-weight: bold;
+        width: 100%;
+        padding: 15px 0px 15px 0px;
+        margin: 20px 0px 0px 0px;
+        border-radius: 7px;
+        border: none;
+        color: white;
+        font-size: 18px;
+        background-color: $negru;
+        &:hover {
+          background-color: $tonInchis;
+        }
+      }
+    }
+  }
+}

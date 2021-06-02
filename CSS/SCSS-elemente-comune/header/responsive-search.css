@@ -1,0 +1,122 @@
+div.search-extend {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+div.search-extend:hover div.icon-search div.for-flex-fill span.icon-cauta {
+  color: white;
+}
+
+div.search-extend div {
+  position: relative;
+}
+
+div.search-extend div.icon-search {
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+div.search-extend div.icon-search div.for-flex-fill {
+  position: relative;
+  z-index: 120;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+div.search-extend div.icon-search div.for-flex-fill span.icon-fill-search {
+  font-size: calc(40rem / 16);
+  position: relative;
+  color: #2b2b2b;
+}
+
+div.search-extend div.icon-search div.for-flex-fill span.icon-cauta {
+  font-size: calc(((40rem * 85.4) / 100) / 16);
+  position: absolute;
+  left: calc(3.2rem / 16);
+  top: calc(2.7rem / 16);
+  color: #9e9e9e;
+}
+
+div.search-extend div.input {
+  position: absolute;
+  height: 2.5rem;
+  width: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 2.35rem;
+  top: 0.7rem;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.search-extend div.input div.input-text {
+  position: relative;
+  width: 15rem;
+  height: 2rem;
+  background-color: #5a5a5a;
+  border: 0.2rem solid #2b2b2b;
+  border-radius: 0 1rem 1rem 0rem;
+}
+
+div.search-extend div.input div.input-text input {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  left: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background-color: rgba(1, 1, 1, 0);
+  color: white;
+}
+
+div.search-extend div.input div.clear {
+  position: absolute;
+  background-color: #5a5a5a;
+  border: 0.2rem solid #2b2b2b;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+div.search-extend div.input div.clear span {
+  position: relative;
+  top: 0.5rem;
+  left: 0.1rem;
+  color: #9e9e9e;
+}
+
+div.search-extend div.input div.clear span:hover {
+  color: white;
+}
+
+div.search-extend div.input.active {
+  width: 15rem;
+}
+/*# sourceMappingURL=responsive-search.css.map */

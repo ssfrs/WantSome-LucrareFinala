@@ -1,0 +1,37 @@
+$telefon-mic: 370px;
+$telefon: 480px;
+$tableta: 768px;
+$tableta-mica: 695px;
+$laptop: 1024px;
+$monitor-normal: 1200px;
+$monitor-mare: 1201px;
+
+@mixin telefon {
+  @media (max-width: #{$telefon}) {
+    @content;
+  }
+}
+
+@mixin tableta {
+  @media (max-width: #{$tableta}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin monitor-normal {
+  @media (max-width: #{$monitor-normal}) {
+    @content;
+  }
+}
+
+@mixin monitor-mare {
+  @media (min-width: #{$monitor-mare}) {
+    @content;
+  }
+}

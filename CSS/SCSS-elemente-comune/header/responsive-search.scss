@@ -1,0 +1,118 @@
+@import "../../SCSS-imports/culori";
+@import "../../SCSS-imports/extend";
+@import "../../SCSS-imports/responsive";
+@import "../../SCSS-imports/dimensiuni";
+
+
+div.search-extend {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    &:hover {
+        div.icon-search {
+            div.for-flex-fill {
+                span.icon-cauta {
+                    color: $alb;
+                }
+            }
+        }
+    }
+
+
+    div {
+        position: relative;
+
+        &.icon-search {
+            top: 0;
+            left: 0;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            div.for-flex-fill {
+                position: relative;
+                z-index: 120;
+                width: fit-content;
+                height: fit-content;
+                span {
+                    &.icon-fill-search {
+                        font-size: calc(40rem / 16);
+                        position: relative;
+                        color: $header;
+                    }
+                    &.icon-cauta {
+                        font-size: calc(((40rem * 85.4) / 100) / 16);
+                        position: absolute;
+                        left: calc(3.2rem / 16);
+                        top: calc(2.7rem / 16);
+                        color: $separator;
+                    }
+                }
+            }
+        }
+        &.input {
+            position: absolute;
+            height: 2.5rem;
+            width: 0.1rem;
+            display: flex;
+            align-items: center;
+            left: 2.35rem;
+            top: 0.7rem;
+            overflow: hidden;
+            transition: all 0.5s;
+
+            div.input-text {
+                position: relative;
+                width: 15rem;
+                height: 2rem;
+                background-color: $ton;
+                border: 0.2rem solid $header;
+                border-radius: 0 1rem 1rem 0rem;
+    
+                input {
+                    position: relative;
+                    width: 70%;
+                    height: 100%;
+                    left: 1rem;
+                    border: none;
+                    outline: none;
+                    font-size: 1.5rem;
+                    background-color: rgba(1, 1, 1, 0);
+                    color: $alb;
+                    
+                }
+            }
+            div.clear {
+                position: absolute;
+                background-color: $ton;
+                border: 0.2rem solid $header;
+                width: 2.5rem;
+                height: 2.5rem;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                span {
+                    position: relative;
+                    top: 0.5rem;
+                    left: 0.1rem;
+                    color: $separator;
+
+                    &:hover {
+                        color: $alb;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+div.search-extend div.input.active {
+    width: 15rem;
+    
+}

@@ -1,0 +1,95 @@
+@import "../../SCSS-imports/culori";
+@import "../../SCSS-imports/extend";
+@import "../../SCSS-imports/responsive";
+@import "../../SCSS-imports/dimensiuni";
+
+
+@media screen and (max-width: $tableta) {
+    header nav.nav-header {
+        width: 85%;
+        grid-gap: 0rem;
+        grid-template-columns: 10% auto 10% 10% 10% 10% auto 10%;
+        grid-template-rows: 100% 100%;
+        grid-template-areas: 
+        "logo logo midMenu midMenu midMenu midMenu x x"
+        "search search search search rightMenu rightMenu rightMenu rightMenu";
+        div {
+            &.logo {
+                grid-area: logo;
+                justify-content: flex-start;
+                &:hover {
+                    font-size: 3.7rem;
+                }
+            }
+            &.responsive-element {
+                &.r-e-changeses{
+                    display: inherit;
+                }
+                display: none;
+                grid-area: search;
+                div.search-extend {
+                    background-color: $header;
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 0 0 1rem 1rem;
+                    div.input {
+                        top: 1.3rem;
+                        div.input-text {
+                            left: 0.4rem;
+                            width: calc(100% - 0.6rem);
+                        }
+                    }
+                    div.icon-search {
+                        top: 0.1rem;
+                    }
+
+                }
+            }
+            &.hamburgher {
+                display: inherit;
+                grid-area: x;
+                justify-content: flex-end;
+                padding-right: 1rem;
+                top: -0.8rem;
+            }
+        }
+        ul {
+            &.menu-bar {
+                grid-area: midMenu;
+            }
+            &.responsive-element {
+                &.r-e-changeses{
+                    display: inherit;
+                }
+                display: none;
+                grid-area: rightMenu;
+                justify-self: flex-end;
+                background-color: $header;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                border-radius: 0 0 1rem 1rem;
+            }
+        }
+
+    }
+
+}
+@media screen and (max-width: $telefon) {
+    html {
+        font-size: 8px;
+    }
+    header nav.nav-header {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: $telefon-mic) {
+    html {
+        font-size: 7px;
+    }
+    header nav.nav-header {
+        width: 95%;
+    }
+
+}

@@ -1,0 +1,88 @@
+@import "../../SCSS-imports/culori";
+@import "../../SCSS-imports/extend";
+@import "../../SCSS-imports/responsive";
+@import "../../SCSS-imports/dimensiuni";
+
+* {
+  @extend %reset;
+}
+body {
+  @extend %body;
+}
+
+@media screen and (max-width: $monitor-normal) {
+  main {
+    div.content-main {
+      div.produse {
+        padding: 1rem 3rem 1rem 2rem;
+        div.produs {
+          &.patrat {
+            grid-column-end: span 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  main {
+    div.content-main {
+      div.produse {
+        padding: 1rem 3rem 1rem 2rem;
+        div.produs {
+          &.patrat {
+            grid-column-end: span 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tableta) {
+  main {
+    div.content-main {
+      div.produse {
+        padding: 1rem 2rem 1rem 1rem;
+        div.produs {
+          &.patrat {
+            grid-column-end: span 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tableta-mica) {
+  main {
+    div.content-main {
+      div.produse {
+        grid-template-columns: 1fr;
+        padding: 1rem 4rem 1rem 3rem;
+        div.produs {
+          &.patrat {
+            grid-column-end: span 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $telefon) {
+  main {
+    div.content-main {
+      div.produse {
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem 1rem 1rem;
+        div.produs {
+          &.patrat {
+            grid-column-end: span 1;
+          }
+        }
+      }
+    }
+  }
+}

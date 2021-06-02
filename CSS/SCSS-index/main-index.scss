@@ -1,0 +1,140 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/dimensiuni";
+
+* {
+  @extend %reset;
+}
+
+body {
+  @extend %body;
+}
+
+
+main {
+    width: 100%;
+    height: calc(100% - 5.8rem);
+    position: relative;
+    background-color: $negru;
+    div.carusel {
+        width: $Full;
+        height: $Full;
+        position: relative;
+        margin: auto;
+        div.carusel-slide {
+            position: relative;
+            width: $Full;
+            height: $Full;
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            background-size: cover;
+            background-position: center;
+
+            div.link-to-pages {
+              position: relative;
+              width: fit-content;
+              height: fit-content;
+              top: $jumate;
+              left: $jumate;
+              transform: translate(-50%, -50%);
+              a {
+                margin: auto;
+                width: fit-content;
+                display: block;
+                position: relative;
+                text-decoration: none;
+                &:first-child {
+                  font-size: 20rem;
+                  color: $alb;
+                  text-shadow: 0 0 1rem $negru;
+                  &:hover ~ :last-child {
+                    background-color: $header;
+                    color: $alb;
+                  }
+                }
+                &:last-child {
+                  margin-top: -1.5rem;
+                  color: $negru;
+                  padding: 0.3rem 1rem;
+                  background-color: $alb;
+                  font-family: "Montserrat";
+                  font-size: 3rem;
+                  font-weight: 500;
+                  border-radius: 1rem;
+                  border: 0.1rem solid $separator;
+                  transition: all 0.3s;
+                  &:hover {
+                    background-color: $header;
+                    color: $alb;
+                    &:active {
+                      transform: scale(1.05);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          div.slide1 {
+            background-image: url("../../IMG/carusel-pictura.jpg");
+          }
+          div.slide2 {
+            background-image: url("../../IMG/carusel-arta-digitala.jpg");
+          }
+          div.slide3 {
+            background-image: url("../../IMG/carusel-crafts.jpg");
+          }
+          div.slide4 {
+            background-image: url("../../IMG/carusel-sculptura.jpg");
+          }
+          div.slide5 {
+            background-image: url("../../IMG/carusel-personalizare.jpg");
+          }
+      }  
+      div.bottons {
+        span {
+            &.icon-sgdreapta,
+            &.icon-sgstanga {
+              cursor: pointer;
+              position: absolute;
+              top: calc(50% - 30vh);
+              text-shadow: 0 0 3rem $negru;
+              padding: 25vh 3.8rem 25vh 3.8rem;
+              color: $alb;
+              font-size: 10vh;
+              transition: 0.6s ease;
+              user-select: none;
+            }
+            &.icon-sgstanga {
+              border-radius: 0 7.5rem 7.5rem 0;
+            }
+            &.icon-sgdreapta {
+              right: 0;
+              border-radius: 7.5rem 0 0 7.5rem;
+            }
+            &.icon-sgdreapta:hover,
+            &.icon-sgstanga:hover {
+              background-color: rgba(0, 0, 0, 0.6);
+            }
+          }
+      }
+}
+
+@-webkit-keyframes fade {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+@keyframes fade {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+}

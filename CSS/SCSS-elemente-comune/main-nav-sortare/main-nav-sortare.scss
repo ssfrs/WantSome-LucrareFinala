@@ -1,0 +1,158 @@
+@import "../../SCSS-imports/culori";
+@import "../../SCSS-imports/extend";
+@import "../../SCSS-imports/responsive";
+@import "../../SCSS-imports/dimensiuni";
+
+* {
+  @extend %reset;
+}
+body {
+  @extend %body;
+}
+
+
+main {
+  position: relative;
+  width: 100%;
+  min-height: calc(100% - 5.8rem);
+  nav.nav-sortare {
+    z-index: 99;
+    top: 5.8rem;
+    width: 100%;
+    height: $H-nav-header;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background;
+
+    ul.elemente-nav-sortare {
+      padding: 0;
+      margin: 0;
+      width: 250mm;
+      height: 100%;
+      position: relative;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 10% 90%;
+      grid-template-areas: 
+      "specialS pictS digiS artizS sculpS personalizS"
+      "special pict digi artiz sculp personaliz";
+
+      li {
+        width: $Full;
+        height: $Full;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.semn-nav-sortare {
+          position: relative;
+          top: 0;
+          font-size: 1rem;
+          color: $separator;
+          transition: all 0.3s;
+          display: flex;
+          justify-content: center;
+          opacity: 0;
+
+          &.semn-nav-sortare-activ {
+            opacity: 1;
+          }
+        }
+        &.semn-special {
+          grid-area: specialS;
+        }
+        &.semn-pict {
+          grid-area: pictS;
+        }
+        &.semn-digi {
+          grid-area: digiS;
+        }
+        &.semn-artiz {
+          grid-area: artizS;
+        }
+        &.semn-sculp {
+          grid-area: sculpS;
+        }
+        &.semn-personaliz {
+          grid-area: personalizS;
+        }
+        &.special {
+          grid-area: special;
+        }
+        &.pict {
+          grid-area: pict;
+        }
+        &.digi {
+          grid-area: digi;
+        }
+        &.artiz {
+          grid-area: artiz;
+        }
+        &.sculp {
+          grid-area: sculp;
+        }
+        &.personaliz {
+          grid-area: personaliz;
+        }
+
+        a {
+          font-size: $font-size-icons-header;
+          text-decoration: none;
+          width: $W-icons-header;
+          height: $H-icons-header;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $ton;
+          border-radius: 0.7rem;
+          border: $border-icons-header solid $ton;
+          top: -0.2rem;
+          transition: all 0.3s;
+          &.buton-nav-sortare-activ {
+            background-color: $tonInchis;
+            color: $alb;
+            border: $border-icons-header solid $separator;
+            font-size: $font-size-active-icons-header;
+          }
+          &:not(.buton-nav-sortare-activ):hover {
+            background-color: $ton;
+            color: $tonDeschis;
+            border-color: $separator;
+            font-size: $font-size-hover-icons-header;
+            box-shadow: 0 0 2px $tonInchis;
+            &:active {
+              font-size: $font-size-active-icons-header;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+main nav.nav-sortare ul.elemente-nav-sortare li.pict:hover ~ .semn-pict {
+  opacity: 1;
+}
+main nav.nav-sortare ul.elemente-nav-sortare li.digi:hover ~ .semn-digi {
+  opacity: 1;
+}
+main nav.nav-sortare ul.elemente-nav-sortare li.artiz:hover ~ .semn-artiz {
+  opacity: 1;
+}
+main nav.nav-sortare ul.elemente-nav-sortare li.sculp:hover ~ .semn-sculp {
+  opacity: 1;
+}
+main nav.nav-sortare ul.elemente-nav-sortare li.personaliz:hover ~ .semn-personaliz {
+  opacity: 1;
+}
+
+
+main nav.nav-sortare ul.elemente-nav-sortare li.link-nav-sortare:not(.container-nav-sortare-activ):hover ~ .semn-nav-sortare-activ {
+  opacity: 0;
+}
