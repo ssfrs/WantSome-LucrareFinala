@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dedede;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  min-height: calc(100% - 5.8rem);
+  height: calc(100% - 5.8rem);
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.content-main {
+  padding: 5rem;
+  position: relative;
+  max-width: 100rem;
+  width: 80%;
+  height: 100%;
+}
+
+main section.content-main h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+main section.content-main div.meniu-contul-meu {
+  position: relative;
+  background-color: #fafafa;
+  margin: auto;
+  width: 70rem;
+  height: 70rem;
+  border-radius: 5rem;
+  padding: 3rem 3rem;
+  -webkit-box-shadow: 0 0 5rem -2rem #2b2b2b;
+          box-shadow: 0 0 5rem -2rem #2b2b2b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "dc dc adauga" "dc dc produse" "date favorite comenzi";
+  grid-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.content-main div.meniu-contul-meu div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: dc;
+  background-color: transparent;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont:hover div.detalii-cont-flip-container {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-box-shadow: 0 0 3rem -1rem #414141;
+          box-shadow: 0 0 3rem -1rem #414141;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont div {
+  border: none;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont div.detalii-cont-flip-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border: 0.1rem solid #9e9e9e;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont div.detalii-cont-flip-container div.detalii-flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont div.detalii-cont-flip-container div.detalii-cont-fata {
+  background-color: #2b2b2b;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont div.detalii-cont-flip-container div.detalii-cont-fata section.avatar {
+  width: 85%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3rem solid white;
+  -webkit-box-shadow: 0 0 0 0.7rem #9e9e9e;
+          box-shadow: 0 0 0 0.7rem #9e9e9e;
+  z-index: 1;
+  background-color: #fafafa;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont div.detalii-cont-flip-container div.detalii-cont-fata section.avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main section.content-main div.meniu-contul-meu div.vizualizare-detalii-cont div.detalii-cont-flip-container div.detalii-cont-spate {
+  background-color: #2b2b2b;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+main section.content-main div.meniu-contul-meu div[class|="buton"] {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto 7rem;
+      grid-template-rows: auto 7rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2b2b2b;
+  border: 0.1rem solid #9e9e9e;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+main section.content-main div.meniu-contul-meu div[class|="buton"]:hover {
+  -webkit-box-shadow: 0 0 3rem -1rem #414141;
+          box-shadow: 0 0 3rem -1rem #414141;
+}
+
+main section.content-main div.meniu-contul-meu div[class|="buton"] span.icon-buton-contul-meu {
+  position: relative;
+  margin: auto;
+  font-size: 10rem;
+  top: 1rem;
+}
+
+main section.content-main div.meniu-contul-meu div[class|="buton"] h2.text-buton {
+  width: 90%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: auto;
+}
+
+main section.content-main div.meniu-contul-meu div[class|="buton"]:hover {
+  background-color: #2b2b2b;
+}
+
+main section.content-main div.meniu-contul-meu div[class|="buton"]:hover span.icon-buton-contul-meu {
+  color: #fafafa;
+}
+
+main section.content-main div.meniu-contul-meu div[class|="buton"]:hover h2.text-buton {
+  color: #fafafa;
+}
+
+main section.content-main div.meniu-contul-meu div.buton-date-personale {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: date;
+}
+
+main section.content-main div.meniu-contul-meu div.buton-comenzile-mele {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: comenzi;
+}
+
+main section.content-main div.meniu-contul-meu div.buton-produsele-mele {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: produse;
+}
+
+main section.content-main div.meniu-contul-meu div.buton-favorite {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: favorite;
+}
+
+main section.content-main div.meniu-contul-meu div.buton-favorite span.icon-buton-contul-meu {
+  font-size: 9rem;
+}
+
+main section.content-main div.meniu-contul-meu div.buton-adauga-produs {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: adauga;
+}
+/*# sourceMappingURL=main-contul-meu.css.map */

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?edbb4t');
-  src:  url('fonts/icomoon.eot?edbb4t#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?edbb4t') format('truetype'),
-    url('fonts/icomoon.woff?edbb4t') format('woff'),
-    url('fonts/icomoon.svg?edbb4t#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fjhh97');
+  src:  url('fonts/icomoon.eot?fjhh97#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fjhh97') format('truetype'),
+    url('fonts/icomoon.woff?fjhh97') format('woff'),
+    url('fonts/icomoon.svg?fjhh97#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,26 +25,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-trimite:before {
+.icon-favorite:before {
   content: "\e900";
 }
-.icon-liciteaza-fill:before {
+.icon-trimite:before {
   content: "\e901";
 }
-.icon-liciteaza:before {
+.icon-liciteaza-fill:before {
   content: "\e902";
 }
-.icon-negociaza-fill:before {
+.icon-liciteaza:before {
   content: "\e903";
 }
-.icon-negociaza:before {
+.icon-negociaza-fill:before {
   content: "\e904";
 }
-.icon-enter:before {
+.icon-negociaza:before {
   content: "\e905";
 }
-.icon-fill-search:before {
+.icon-enter:before {
   content: "\e906";
+}
+.icon-fill-search:before {
+  content: "\e907";
 }
 .icon-semn-cont:before {
   content: "\e91c";
@@ -113,49 +116,49 @@
   content: "\e91b";
 }
 .icon-sgdreapta:before {
-  content: "\e907";
-}
-.icon-sgstanga:before {
   content: "\e908";
 }
-.icon-logo:before {
+.icon-sgstanga:before {
   content: "\e91f";
 }
-.icon-cont:before {
+.icon-logo:before {
   content: "\e920";
 }
-.icon-cos:before {
+.icon-cont:before {
   content: "\e921";
 }
-.icon-plus:before {
+.icon-cos:before {
   content: "\e922";
 }
-.icon-artist:before {
+.icon-plus:before {
   content: "\e923";
 }
-.icon-galerie:before {
+.icon-artist:before {
   content: "\e924";
 }
-.icon-home:before {
+.icon-galerie:before {
   content: "\e925";
 }
-.icon-pencil2:before {
+.icon-home:before {
   content: "\e926";
 }
-.icon-quill:before {
+.icon-pencil2:before {
   content: "\e927";
 }
-.icon-droplet:before {
+.icon-quill:before {
   content: "\e928";
 }
-.icon-image:before {
+.icon-droplet:before {
   content: "\e929";
 }
-.icon-images:before {
+.icon-image:before {
   content: "\e92a";
 }
-.icon-file-picture:before {
+.icon-images:before {
   content: "\e92b";
+}
+.icon-file-picture:before {
+  content: "\e92c";
 }
 .icon-folder:before {
   content: "\e92f";

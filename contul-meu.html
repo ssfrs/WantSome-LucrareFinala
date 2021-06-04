@@ -1,57 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/SCSS-contul-meu/header-contul-meu.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="ALTELE\icons\style.css">
-    <title>My Acount</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS HEADER -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/header/header.css" />
+    <!-- CSS HEADER - responsive -->
+    <link
+      rel="stylesheet"
+      href="CSS/SCSS-elemente-comune/header/header-responsive.css"
+    />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="CSS/SCSS-contul-meu/main-contul-meu.css" />
+    <!-- CSS Fonturi -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ALTELE\icons\style.css" />
+    <title>Contul Meu</title>
+  </head>
+  <body>
+    <!-- START - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+    <div class="top-header-fill"></div>
+    <!-- END - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <!-- START - Header -->
     <header>
-        <nav>
-            <ul class="left-bar">
-                <li class="logo head-bar">
-                    <a href="contul-meu.html"><span class="icon-logo"></span></a>
-                </li>
-                <li class="search head-bar">
-                    <a href="#"><span class="icon-cauta"></span></a>
-                </li>
-            </ul>
-            <ul class="menu-bar">
-                <li class="home head-bar">
-                    <a href="index.html"><span class="icon-home"></span></a>
-                    <div id="semnHome" class="semn-home semn" ><span class="icon-semn-meniu"></span></div>
-                </li>
-                <li class="galery head-bar">
-                    <a href="galerie.html"><span class="icon-galerie"></span></a>
-                    <div id="semnGalerie" class="semn-galerie null"><span class="icon-semn-meniu"></span></div>
-                </li>
-                <li class="artist head-bar">
-                    <a href="artisti.html"><span class="icon-artist"></span></a>
-                    <div id="semnArtist" class="semn-artist null"><span class="icon-semn-meniu"></span></div>
-                </li>
-                <!-- <div id="semn" class="semn-home semn" ><span class="icon-semn-meniu"></span></div> -->
-            </ul>
-            <ul class="right-bar">
-                <li class="add-acount head-bar">
-                    <a href="singup.html"><span class="icon-plus"></span></a>
-                </li>
-                <li class="my-acount head-bar">
-                    <a href="log-in.html"><span class="icon-cont"></span></a>
-                </li>
-                <li class="cart head-bar">
-                    <a href="cos-de-cumparaturi.html"><span class="icon-cos"></span></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="separator"></div>
+      <nav class="nav-header">
+        <div class="logo">
+          <a href="contul-meu.html"><span class="icon-logo"></span></a>
+        </div>
+        <div id="search" class="responsive-element">
+          <div id="search-extend" class="search-extend">
+            <div class="icon-search">
+              <div class="for-flex-fill">
+                <span class="icon-fill-search"></span>
+                <span class="icon-cauta"></span>
+              </div>
+            </div>
+            <div class="input">
+              <div class="input-text">
+                <input type="text" placeholder="Search" id="mysearch" />
+              </div>
+              <div
+                class="clear"
+                onclick="document.getElementById('mysearch').value = ''"
+              >
+                <span class="icon-enter"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="menu-bar">
+          <li class="home mid-menu-link">
+            <a class="home" href="index.html"
+              ><span class="icon-home"></span
+            ></a>
+          </li>
+          <li class="galery mid-menu-link">
+            <a class="galery" href="galerie.html"
+              ><span class="icon-galerie"></span
+            ></a>
+          </li>
+          <li class="artist mid-menu-link">
+            <a class="artist" href="artisti.html"
+              ><span class="icon-artist"></span
+            ></a>
+          </li>
+
+          <li id="semnHome" class="semn-home semn-header">
+            <span class="icon-semn-meniu"></span>
+          </li>
+          <li id="semnGalerie" class="semn-galerie semn-header">
+            <span class="icon-semn-meniu"></span>
+          </li>
+          <li id="semnArtist" class="semn-artist semn-header">
+            <span class="icon-semn-meniu"></span>
+          </li>
+        </ul>
+        <div class="hamburgher">
+          <div id="hamburgher">
+            <div class="burger" id="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+        </div>
+        <ul class="responsive-element" id="right-bar">
+          <li class="add-acount head-bar-r">
+            <a href="singup.html"><span class="icon-plus"></span></a>
+          </li>
+          <li class="my-acount head-bar-r right-bar-activ">
+            <a href="log-in.html"><span class="icon-cont"></span></a>
+          </li>
+          <li class="cart head-bar-r">
+            <a href="cos-de-cumparaturi.html"><span class="icon-cos"></span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="separator"></div>
     </header>
+    <!-- END - Header -->
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <!-- START - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+    <section class="header-fill"></section>
+    <!-- END - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+
     <main>
+      <section class="content-main">
+        <h1 class="titlu">Contul Meu</h1>
+        <div class="meniu-contul-meu">
+          <div class="vizualizare-detalii-cont">
+            <div class="detalii-cont-flip-container">
+              <div class="detalii-cont-fata detalii-flip">
+                <section class="avatar">
+                  <img src="img/avatar1.jpg" alt="avatar" />
+                </section>
+              </div>
+              <div class="detalii-cont-spate detalii-flip"></div>
+            </div>
+          </div>
+          <div class="buton-date-personale">
+            <span class="icon-artist icon-buton-contul-meu"></span>
+            <h2 class="text-buton">Modifica datele Personale</h2>
+          </div>
+          <div class="buton-comenzile-mele">
+            <span class="icon-cos icon-buton-contul-meu"></span>
+            <h2 class="text-buton">Comenzile Mele</h2>
+          </div>
+          <div class="buton-produsele-mele">
+            <span class="icon-galerie icon-buton-contul-meu"></span>
+            <h2 class="text-buton">Produsele Mele</h2>
+          </div>
+          <div class="buton-favorite">
+            <span class="icon-favorite icon-buton-contul-meu"></span>
+            <h2 class="text-buton">Produse Favorite</h2>
+          </div>
+          <div class="buton-adauga-produs">
+            <span class="icon-plus icon-buton-contul-meu"></span>
+            <h2 class="text-buton">Adauga Produs</h2>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- <script type="text/javascript" src="JS/log-in.js"></script> -->
-</body>
+    <script
+      type="text/javascript"
+      src="js/JS-elemente-comune/header-right-bar-responsive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/JS-elemente-comune/search-box.js"
+    ></script>
+  </body>
 </html>
