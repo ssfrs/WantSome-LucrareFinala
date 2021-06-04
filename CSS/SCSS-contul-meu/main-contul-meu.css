@@ -30,14 +30,26 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main section.content-main {
   padding: 5rem;
   position: relative;
-  max-width: 100rem;
-  width: 80%;
-  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main section.content-main div.meniu-contul-meu {
@@ -161,8 +173,8 @@ main section.content-main div.meniu-contul-meu div[class|="buton"] {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: auto 7rem;
-      grid-template-rows: auto 7rem;
+  -ms-grid-rows: auto 35%;
+      grid-template-rows: auto 35%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -238,5 +250,17 @@ main section.content-main div.meniu-contul-meu div.buton-adauga-produs {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: adauga;
+}
+
+main section.meniu-ascuns-adauga-produs {
+  position: absolute;
+  min-width: 70rem;
+  width: 160rem;
+  max-width: 160rem;
+  min-height: 70rem;
+  height: 90%;
+  background-color: blueviolet;
+  opacity: 0.2;
+  border-radius: 10rem;
 }
 /*# sourceMappingURL=main-contul-meu.css.map */

@@ -10,13 +10,15 @@ main {
   @extend %main;
   display: flex;
   justify-content: center;
+  align-items: center;
   section {
     &.content-main {
       padding: 5rem;
       position: relative;
-      max-width: 100rem;
-      width: 80%;
-      height: 100%;
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
 
       div.meniu-contul-meu {
         position: relative;
@@ -109,7 +111,7 @@ main {
             position: relative;
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: auto 7rem;
+            grid-template-rows: auto 35%;
             justify-content: center;
             align-items: center;
             color: $header;
@@ -162,6 +164,19 @@ main {
           }
         }
       }
+    }
+    &.meniu-ascuns-adauga-produs {
+      position: absolute;
+      min-width: 70rem;
+      width: 160rem;
+      max-width: 160rem;
+      min-height: 70rem;
+      height: 90%;
+      background-color: blueviolet;
+      opacity: 0.2;
+      border-radius: 10rem;
+      // display: none;
+      // left: -100vw;
     }
   }
 }
