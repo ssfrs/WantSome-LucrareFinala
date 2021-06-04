@@ -40,12 +40,6 @@ main section.content-main {
   height: 100%;
 }
 
-main section.content-main h1 {
-  text-align: center;
-  font-size: 5rem;
-  margin-bottom: 2rem;
-}
-
 main section.content-main div.meniu-contul-meu {
   position: relative;
   background-color: #fafafa;
