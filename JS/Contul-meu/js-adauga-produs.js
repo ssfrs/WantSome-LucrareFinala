@@ -4,6 +4,7 @@ const btnIesireMeniuAdaugaProdus = document.querySelector('.btn-iesire-meniu-ada
 const btnPosteazaProdus = document.querySelector('#btn-adauga-produs');
 
 
+
 btnAdaugaProdus.onclick = function() {
     meniuAscunsAdaugaProdus.classList.toggle('active');
 }
@@ -13,3 +14,16 @@ btnIesireMeniuAdaugaProdus.onclick = function() {
 btnPosteazaProdus.onclick = function() {
     meniuAscunsAdaugaProdus.classList.toggle('active');
 }
+
+
+// function toggleActive(elementAscuns) {
+//     elementAscuns.classList.toggle('active');
+// }
+
+// btnAdaugaProdus.onclick = toggleActive(meniuAscunsAdaugaProdus);
+// btnIesireMeniuAdaugaProdus.onclick = toggleActive(meniuAscunsAdaugaProdus);
+// btnPosteazaProdus.onclick = toggleActive(meniuAscunsAdaugaProdus);
+
+// btnAdaugaProdus.addEventListener("click", toggleActive(meniuAscunsAdaugaProdus));
+// btnIesireMeniuAdaugaProdus.addEventListener("click", toggleActive(meniuAscunsAdaugaProdus));
+// btnPosteazaProdus.addEventListener("click", toggleActive(meniuAscunsAdaugaProdus));
