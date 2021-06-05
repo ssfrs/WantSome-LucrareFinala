@@ -146,7 +146,95 @@
           </div>
         </div>
       </section>
-      <section class="meniu-ascuns-adauga-produs"></section>
+      <section class="meniu-ascuns-adauga-produs">
+        <button class="btn-iesire-meniu-adauga-produs">
+          <span class="icon-plus"></span>
+        </button>
+        <h1>Adauga un Produs Nou</h1>
+        <form id="formular-adauga-produs">
+          <input
+            type="text"
+            name="poza-principala"
+            id="poza-principala"
+            placeholder="Link catre poza Produsului"
+          />
+          <input
+            type="text"
+            name="nume-produs"
+            id="nume-produs"
+            placeholder="Alege numele produsului"
+          />
+          <input
+            type="number"
+            name="pret-de-lista"
+            id="pret-de-lista"
+            placeholder="Pretul real al prodului"
+          />
+          <input
+            type="number"
+            name="pret-produs"
+            id="pret-produs"
+            placeholder="Pretul cu discount"
+          />
+          <select name="valuta" id="valuta">
+            <option value="0">Selecteaza Moneda</option>
+            <option value="1">Lei</option>
+            <option value="2">Euro</option>
+          </select>
+          <select nume="categorie" id="categorie">
+            <option value="0">Selecteaza Categoria</option>
+            <option value="1">Pictura</option>
+            <option value="2">Arta Digitala</option>
+            <option value="3">Artizanat</option>
+            <option value="4">Sculptura</option>
+          </select>
+          <input
+            type="text"
+            name="tehnica/tehnologie"
+            id="tehnica-tehnologie"
+            placeholder="Tehnica/Tehnologie"
+          />
+          <input
+            type="text"
+            name="suport/material"
+            id="suport-material"
+            placeholder="Suport/Material"
+          />
+          <input
+            type="text"
+            name="dimensiune"
+            id="dimensiune"
+            placeholder="Dimensiune"
+          />
+          <input
+            type="text"
+            name="localitate"
+            id="localitate"
+            placeholder="Localitate"
+          />
+          <input
+            type="text"
+            name="cost-livrare"
+            id="cost-livrare"
+            placeholder="Cost Livrare"
+          />
+          <select name="timp-de-livrare" id="timp-de-livrare">
+            <option value="0">Timp Livrare</option>
+            <option value="1">1 zi</option>
+            <option value="2">2 zile</option>
+            <option value="3">3 zile</option>
+            <option value="4">4 zile</option>
+            <option value="5">5 zile</option>
+            <option value="6">6 zile</option>
+            <option value="7">7 zile</option>
+            <option value="8">Mai multe zile</option>
+          </select>
+          <textarea name="descriere" id="descriere">
+            O scurta descriere de maxim 250 caractere
+          </textarea>
+          <button type="submit" id="btn-adauga-produs">Publica Produsul</button>
+        </form>
+      </section>
     </main>
     <script
       type="text/javascript"
@@ -156,5 +244,6 @@
       type="text/javascript"
       src="js/JS-elemente-comune/search-box.js"
     ></script>
+    <script src="js/Contul-meu/js-adauga-produs.js"></script>
   </body>
 </html>
