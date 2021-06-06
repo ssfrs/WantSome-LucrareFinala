@@ -16,27 +16,28 @@ main {
   background-size: cover;
   width: 100%;
   height: calc(100% - 5.8rem);
-  min-height: 600px;
+  min-height: 60rem;
   position: relative;
   font-family: "Montserrat";
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
 
   div.login {
-    width: 500px;
+    width: 50rem;
     background-color: $alb;
     position: relative;
-    box-shadow: 0mm 0mm 1mm 0mm $separator;
-    border-radius: 10mm;
+    box-shadow: 0 0 0.5rem 0 $separator;
+    border-radius: 5rem;
     div.formLogo {
       text-align: center;
-      padding: 30px 0px 20px 0px;
+      padding: 3rem 0 2rem 0;
       position: relative;
-      font-size: 25mm;
+      font-size: 15rem;
     }
     form.formular {
-      padding: 5px 50px 65px 50px;
+      padding: 0.5rem 5rem 6.5rem 5rem;
       a {
         &.forgotPass {
           color: $negru;
@@ -49,12 +50,12 @@ main {
           text-decoration: none;
           text-align: center;
           width: 100%;
-          padding: 15px 0px 15px 0px;
-          margin: 20px 0px 0px 0px;
-          border-radius: 7px;
+          padding: 1.5rem 0 1.5rem 0;
+          margin: 2rem 0 0 0;
+          border-radius: 0.7rem;
           color: $negru;
-          font-size: 18px;
-          border: 1px solid $negru;
+          font-size: 1.8rem;
+          border: 0.1rem solid $negru;
           background-color: $alb;
           &:hover {
             background-color: $background;
@@ -76,9 +77,9 @@ main {
       input {
         &.text {
           width: 100%;
-          border-radius: 7px;
-          padding: 10px 5px 10px 5px;
-          box-shadow: 0px 0px 0px 1px $header;
+          border-radius: 0.7rem;
+          padding: 1rem 0.5rem 1rem 0.5rem;
+          box-shadow: 0 0 0 0.1rem $header;
           border: none;
           &:focus {
             background-color: $tonDeschis;
@@ -93,28 +94,29 @@ main {
           }
         }
         &#password {
-          margin: 0px 0px -5px 0px;
+          margin: 0 0 -0.5rem 0;
         }
-        &#username {
-          margin: 0px 0px 20px 0px;
+        &#email {
+          margin: 0 0 2rem 0;
         }
         &#remember {
-          margin-top: 15px;
-          vertical-align: -2px;
+          margin-top: 1.5rem;
+          vertical-align: -0.2rem;
         }
       }
       button {
         font-weight: bold;
         width: 100%;
-        padding: 15px 0px 15px 0px;
-        margin: 20px 0px 0px 0px;
-        border-radius: 7px;
+        padding: 1.5rem 0 1.5rem 0;
+        margin: 2rem 0 0 0;
+        border-radius: 0.7rem;
         border: none;
         color: white;
-        font-size: 18px;
+        font-size: 1.8rem;
         background-color: $negru;
+        transition: all 0.4s;
         &:hover {
-          background-color: $tonInchis;
+          background-color: $contrast;
         }
       }
     }
