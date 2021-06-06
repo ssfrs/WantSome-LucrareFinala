@@ -6,5 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form class="adauga-produs">
+      <div class="informatii-generale">
+        <h2>Personalizează-ți produsul</h2>
+        <label for="nume-produs">Dă un nume produsului tău*</label>
+        <br />
+        <input
+          type="text"
+          id="nume-produs"
+          required="required"
+          placeholder="Nume Produs"
+        />
+        <br />
+        <label for="categoria-produsului">
+          Alege categoria din care face parte produsul tău*
+        </label>
+        <br />
+        <select
+          name="categoria-produsului"
+          id="categoria-produsului"
+          required="required"
+        >
+          <option value="pictura">Pictură</option>
+          <option value="arta-digitala">Artă Digitală</option>
+          <option value="artizanat">Artizanat</option>
+          <option value="sculptura">Sculptură</option>
+        </select>
+      </div>
+      <div class="imagini-produs">
+        <h2>Adaugă cel puțin o imagine</h2>
+        <label for="imagine-principala">Imagine principală*</label>
+        <br />
+        <input type="url" id="imagine-principala" required="required" />
+        <br />
+        <label>Imagini secundare</label>
+        <br />
+        <input type="url" id="imagine-secundara" />
+        <br />
+        <input type="url" id="imagine-secundara" />
+        <br />
+        <input type="url" id="imagine-secundara" />
+        <br />
+      </div>
+      <div class="descrierea-produsului">
+        <h2>Adaugă o scurtă descriere*</h2>
+        <textarea
+          name="descrierea-produsului"
+          id="descrierea-produsului"
+          placeholder="Adaugă o descriere de maxim 250 caractere..."
+          required="required"
+        ></textarea>
+      </div>
+      <div class="pretul-produsului">
+        <h2>Apreciază-ți munca!</h2>
+        <label for="pret-produs">Preț*</label>
+        <br />
+        <input type="number" id="pret-produs" required="required" />
+        <select name="valuta" id="pret-produs">
+          <option value="lei">Lei</option>
+          <option value="euro">€</option>
+          <option value="dolar">$</option>
+        </select>
+        <br />
+        <label for="pret-fix">Preț fix</label>
+        <input
+          type="radio"
+          id="pret-fix"
+          name="tip-pret"
+          value="pret-fix"
+          checked
+        />
+        <label for="pret-negociabil">Preț negociabil</label>
+        <input
+          type="radio"
+          id="pret-negociabil"
+          name="tip-pret"
+          value="pret-negociabil"
+        />
+        <label for="pret-licitat">Preț licitat</label>
+        <input
+          type="radio"
+          id="pret-licitat"
+          name="tip-pret"
+          value="pret-licitat"
+        />
+      </div>
+      <div class="informatii-produs">
+        <h2>Pune informații reale!</h2>
+        <label for="tehnica-tehnologie">Tehnică/Tehnologie</label>
+        <br />
+        <input type="text" id="tehnica-tehnologie" />
+        <br />
+        <label for="suport-material">Suport/Material utilizat</label>
+        <br />
+        <input type="text" id="suport-material" />
+        <br />
+        <label for="dimensiunea-produsului">Dimensiunea produsului</label>
+        <br />
+        <small>
+          (Scrie dimensiunea produsului în CM (LxlxH) sau în MB (după caz))
+        </small>
+        <br />
+        <input type="text" id="dimensiunea-produsului" />
+      </div>
+      <div class="informatii-suplimentare">
+        <h2>Informații suplimentare</h2>
+        <label for="localizarea-produsului">Localizarea produsului</label>
+        <br />
+        <input
+          type="text"
+          id="localizarea-produsului"
+          placeholder="Localitate"
+        />
+        <br />
+        <label>Metode de livrare</label>
+        <br />
+        <label for="curier">Curierat</label>
+        <input
+          type="checkbox"
+          id="curier"
+          name="metoda-de-livrare"
+          value="curier"
+        />
+        <label for="posta">Poștă</label>
+        <input
+          type="checkbox"
+          id="posta"
+          name="metoda-de-livrare"
+          value="posta"
+        />
+        <label for="preper">Predare personală</label>
+        <input
+          type="checkbox"
+          id="preper"
+          name="metoda-de-livrare"
+          value="predare-personala"
+        />
+        <br />
+        <label for="timp-livrare">Timp pentru livrare</label>
+        <br />
+        <select name="timp-livrare" id="timp-livrare">
+          <option value="1">1 zi</option>
+          <option value="2">2 zile</option>
+          <option value="3">3 zile</option>
+          <option value="4">4 zile</option>
+          <option value="5">5 zile</option>
+          <option value="6">6 zile</option>
+          <option value="7">7 zile</option>
+          <option value="multe">Mai multe zile</option>
+        </select>
+      </div>
+      <div class="publicare-anunt">
+        <button type="submit">Publică produsul</button>
+      </div>
+    </form>
+  </body>
 </html>
