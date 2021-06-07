@@ -1,0 +1,166 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+html {
+  font-size: 10px;
+}
+* {
+  @extend %reset;
+}
+body {
+  @extend %body;
+}
+main {
+  @extend %main;
+}
+form.meniu-ascuns-adauga-produs {
+  position: relative;
+  width: 100rem;
+  min-width: 40rem;
+  height: fit-content;
+  margin: auto;
+  padding: 4rem 0;
+  div {
+    width: 100%;
+    height: fit-content;
+    background-color: $alb;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem -0.2rem $separator;
+    padding: 4rem 10rem;
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      padding-bottom: 1.3rem;
+    }
+    label {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+    input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      background-color: $background;
+      border: 0.1rem solid $background;
+      border-radius: 0.5rem;
+      font-weight: 600;
+
+      &::placeholder {
+        font-style: italic;
+        font-weight: 400;
+      }
+      &:focus {
+        border-bottom: 0.1rem solid $negru;
+        outline: none;
+      }
+    }
+    select {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+      background-color: $background;
+      border: 0.1rem solid $background;
+      border-radius: 0.5rem;
+
+      &:hover {
+        outline: none;
+      }
+
+      &:focus {
+        border-bottom: 0.1rem solid $negru;
+        outline: none;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 15rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      background-color: $background;
+      border-radius: 0.5rem;
+      border: 0.1rem solid $background;
+      resize: none;
+      padding: 1rem;
+
+      &:focus {
+        border-bottom: 0.1rem solid $negru;
+        outline: none;
+      }
+      &::placeholder {
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+    button {
+      display: block;
+      position: relative;
+      width: 100%;
+      margin: auto;
+      font-size: 3rem;
+      font-weight: 700;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 0.3rem solid $header;
+      background-color: $header;
+      color: $alb;
+      &:hover {
+        color: $header;
+        background-color: $background;
+      }
+    }
+    &.pretul-produsului {
+      input {
+        display: inline;
+        width: 85%;
+        margin-right: 0.5rem;
+        &[type="radio"] {
+          width: fit-content;
+          margin-right: 2rem;
+        }
+      }
+      label {
+        &[name="tip-pret"] {
+          display: inline;
+          width: fit-content;
+          padding-right: 0.5rem;
+        }
+      }
+      select {
+        width: calc(15% - 1rem);
+      }
+    }
+    &.informatii-produs {
+      label.dimensiunea-produsului {
+        padding-bottom: 0rem;
+      }
+      small {
+        width: 100%;
+        display: inline-block;
+        font-size: 1rem;
+        padding-bottom: 0.3rem;
+      }
+    }
+    &.informatii-suplimentare {
+      input {
+        &[type="checkbox"] {
+          width: fit-content;
+          display: inline;
+          margin-right: 2rem;
+        }
+      }
+      label[name="metoda-de-livrare"] {
+        width: fit-content;
+        display: inline;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
