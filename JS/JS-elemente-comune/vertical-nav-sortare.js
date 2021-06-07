@@ -3,7 +3,7 @@ function arataMeniulAscuns(clasaButoane, clasaSageti, clasaMeniuriAscunse) {
     const vnvIconSageti = document.querySelectorAll(clasaSageti);
     const vnsMeniuriAscunse = document.querySelectorAll(clasaMeniuriAscunse);
     // const numarButoane = vnvButoane.length;
-
+    
     for (let numarOrdin in vnvButoane) {
         vnvButoane[numarOrdin].onclick = function() {
             vnvButoane[numarOrdin].classList.toggle('active');
