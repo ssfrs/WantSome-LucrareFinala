@@ -10,7 +10,6 @@ body {
   @extend %body;
 }
 
-
 main {
   position: relative;
   width: 100%;
@@ -25,7 +24,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $background;
+    background-color: $sort-meniu;
+    box-shadow: 0 0 0.5rem -0.2rem $negru;
 
     ul.elemente-nav-sortare {
       padding: 0;
@@ -37,9 +37,9 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 10% 90%;
-      grid-template-areas: 
-      "specialS pictS digiS artizS sculpS personalizS"
-      "special pict digi artiz sculp personaliz";
+      grid-template-areas:
+        "specialS pictS digiS artizS sculpS personalizS"
+        "special pict digi artiz sculp personaliz";
 
       li {
         width: $Full;
@@ -135,7 +135,6 @@ main {
   }
 }
 
-
 main nav.nav-sortare ul.elemente-nav-sortare li.pict:hover ~ .semn-pict {
   opacity: 1;
 }
@@ -148,11 +147,18 @@ main nav.nav-sortare ul.elemente-nav-sortare li.artiz:hover ~ .semn-artiz {
 main nav.nav-sortare ul.elemente-nav-sortare li.sculp:hover ~ .semn-sculp {
   opacity: 1;
 }
-main nav.nav-sortare ul.elemente-nav-sortare li.personaliz:hover ~ .semn-personaliz {
+main
+  nav.nav-sortare
+  ul.elemente-nav-sortare
+  li.personaliz:hover
+  ~ .semn-personaliz {
   opacity: 1;
 }
 
-
-main nav.nav-sortare ul.elemente-nav-sortare li.link-nav-sortare:not(.container-nav-sortare-activ):hover ~ .semn-nav-sortare-activ {
+main
+  nav.nav-sortare
+  ul.elemente-nav-sortare
+  li.link-nav-sortare:not(.container-nav-sortare-activ):hover
+  ~ .semn-nav-sortare-activ {
   opacity: 0;
 }
