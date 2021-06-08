@@ -13,6 +13,11 @@
     />
     <!-- CSS Main -->
     <link rel="stylesheet" href="CSS/SCSS-contul-meu/main-contul-meu.css" />
+    <!-- CSS Formular adauga produs -->
+    <link
+      rel="stylesheet"
+      href="css/SCSS-contul-meu/formular-adauga-produs.css"
+    />
     <!-- CSS Fonturi -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -118,7 +123,7 @@
     <main>
       <section class="content-main">
         <div class="meniu-contul-meu">
-          <div class="vizualizare-detalii-cont">
+          <div class="vizualizare-detalii-cont btnm-contul-meu">
             <div class="detalii-cont-flip-container">
               <div class="detalii-cont-fata detalii-flip">
                 <section class="avatar">
@@ -128,117 +133,282 @@
               <div class="detalii-cont-spate detalii-flip"></div>
             </div>
           </div>
-          <div class="buton-date-personale">
+          <div class="buton-date-personale btnm-contul-meu">
             <span class="icon-artist icon-buton-contul-meu"></span>
             <h2 class="text-buton">Modifica datele Personale</h2>
           </div>
-          <div class="buton-comenzile-mele">
+          <div class="buton-comenzile-mele btnm-contul-meu">
             <span class="icon-cos icon-buton-contul-meu"></span>
             <h2 class="text-buton">Comenzile Mele</h2>
           </div>
-          <div class="buton-produsele-mele">
+          <div class="buton-produsele-mele btnm-contul-meu">
             <span class="icon-galerie icon-buton-contul-meu"></span>
             <h2 class="text-buton">Produsele Mele</h2>
           </div>
-          <div class="buton-favorite">
+          <div class="buton-favorite btnm-contul-meu">
             <span class="icon-favorite icon-buton-contul-meu"></span>
             <h2 class="text-buton">Produse Favorite</h2>
           </div>
-          <div class="buton-adauga-produs">
+          <div class="buton-adauga-produs btnm-contul-meu">
             <span class="icon-plus icon-buton-contul-meu"></span>
             <h2 class="text-buton">Adauga Produs</h2>
           </div>
         </div>
       </section>
-      <section class="meniu-ascuns-adauga-produs">
-        <button class="btn-iesire-meniu-adauga-produs">
-          <span class="icon-plus"></span>
-        </button>
-        <h1>Adauga un Produs Nou</h1>
-        <form id="formular-adauga-produs">
-          <input
-            type="text"
-            name="poza-principala"
-            id="poza-principala"
-            placeholder="Link catre poza Produsului"
-          />
-          <input
-            type="text"
-            name="nume-produs"
-            id="nume-produs"
-            placeholder="Alege numele produsului"
-          />
-          <input
-            type="number"
-            name="pret-de-lista"
-            id="pret-de-lista"
-            placeholder="Pretul real al prodului"
-          />
-          <input
-            type="number"
-            name="pret-produs"
-            id="pret-produs"
-            placeholder="Pretul cu discount"
-          />
-          <select name="valuta" id="valuta">
-            <option value="0">Selecteaza Moneda</option>
-            <option value="1">Lei</option>
-            <option value="2">Euro</option>
-          </select>
-          <select nume="categorie" id="categorie">
-            <option value="0">Selecteaza Categoria</option>
-            <option value="1">Pictura</option>
-            <option value="2">Arta Digitala</option>
-            <option value="3">Artizanat</option>
-            <option value="4">Sculptura</option>
-          </select>
-          <input
-            type="text"
-            name="tehnica/tehnologie"
-            id="tehnica-tehnologie"
-            placeholder="Tehnica/Tehnologie"
-          />
-          <input
-            type="text"
-            name="suport/material"
-            id="suport-material"
-            placeholder="Suport/Material"
-          />
-          <input
-            type="text"
-            name="dimensiune"
-            id="dimensiune"
-            placeholder="Dimensiune"
-          />
-          <input
-            type="text"
-            name="localitate"
-            id="localitate"
-            placeholder="Localitate"
-          />
-          <input
-            type="text"
-            name="cost-livrare"
-            id="cost-livrare"
-            placeholder="Cost Livrare"
-          />
-          <select name="timp-de-livrare" id="timp-de-livrare">
-            <option value="0">Timp Livrare</option>
-            <option value="1">1 zi</option>
-            <option value="2">2 zile</option>
-            <option value="3">3 zile</option>
-            <option value="4">4 zile</option>
-            <option value="5">5 zile</option>
-            <option value="6">6 zile</option>
-            <option value="7">7 zile</option>
-            <option value="8">Mai multe zile</option>
-          </select>
-          <textarea name="descriere" id="descriere">
-            O scurta descriere de maxim 250 caractere
-          </textarea>
-          <button type="submit" id="btn-adauga-produs">Publica Produsul</button>
-        </form>
-      </section>
+      <div class="meniuri-ascunse-contul-meu">
+        <section class="meniu-ascuns-detalii-cont ma-contul-meu"></section>
+        <section class="meniu-ascuns-date-personale ma-contul-meu"></section>
+        <section class="meniu-ascuns-comenzile-mele ma-contul-meu"></section>
+        <section class="meniu-ascuns-produsele-mele ma-contul-meu"></section>
+        <section class="meniu-ascuns-favorite ma-contul-meu"></section>
+        <section class="meniu-ascuns-adauga-produs ma-contul-meu">
+          <button class="btn-iesire-meniu-adauga-produs">
+            <span class="icon-plus"></span>
+          </button>
+          <h1>Adauga un Produs Nou</h1>
+          <form class="formular-adauga-produs">
+            <div class="informatii-generale">
+              <h2>Personalizează-ți produsul</h2>
+              <label for="nume-produs">Dă un nume produsului tău*</label>
+              <br />
+              <input
+                type="text"
+                name="nume-produs"
+                id="nume-produs"
+                required="required"
+                placeholder="Nume Produs"
+              />
+              <br />
+              <label for="categoria-produsului">
+                Alege categoria din care face parte produsul tău*
+              </label>
+              <br />
+              <select
+                name="categoria-produsului"
+                id="categoria-produsului"
+                required="required"
+              >
+                <option value="pictura">Pictură</option>
+                <option value="arta-digitala">Artă Digitală</option>
+                <option value="artizanat">Artizanat</option>
+                <option value="sculptura">Sculptură</option>
+              </select>
+              <br />
+              <label for="plan-vizualizare">
+                Alege un plan pentru Vizualizare*
+              </label>
+              <br />
+              <select
+                name="plan-vizualizare"
+                id="plan-vizualizare"
+                required="required"
+              >
+                <option value="mic">Free</option>
+                <option value="mijlociu">Standard</option>
+                <option value="artizanat">Pro</option>
+                <option value="sculptura">Prime</option>
+              </select>
+            </div>
+            <div class="imagini-produs">
+              <h2>Adaugă cel puțin o imagine</h2>
+              <label for="imagine-principala">Imagine principală*</label>
+              <br />
+              <input
+                type="text"
+                name="imagine-principala"
+                id="imagine-principala"
+                placeholder="Link către imaginea aleasă"
+                required="required"
+              />
+              <br />
+              <label>Imagini secundare</label>
+              <br />
+              <input
+                type="text"
+                name="imagine-secundara"
+                id="imagine-secundara1"
+                placeholder="Link către imaginea aleasă"
+              />
+              <br />
+              <input
+                type="text"
+                name="imagine-secundara"
+                id="imagine-secundara2"
+                placeholder="Link către imaginea aleasă"
+              />
+              <br />
+              <input
+                type="text"
+                name="imagine-secundara"
+                id="imagine-secundara3"
+                placeholder="Link către imaginea aleasă"
+              />
+              <br />
+            </div>
+            <div class="descrierea-produsului">
+              <h2>Scrie o critică lucrării tale</h2>
+              <label for="descrierea-produsului"
+                >Adaugă o scurtă descriere, de maxim 250 caractere*</label
+              >
+              <textarea
+                name="descrierea-produsului"
+                id="descrierea-produsului"
+                placeholder="Adaugă o descriere de maxim 250 caractere..."
+                required="required"
+              ></textarea>
+            </div>
+            <div class="pretul-produsului">
+              <h2>Apreciază-ți munca!</h2>
+              <label for="pret-produs">Preț*</label>
+              <br />
+              <input
+                type="number"
+                name="pret-produs"
+                id="pret-produs"
+                placeholder="ex: 1299.00"
+                required="required"
+              />
+              <select name="valuta" id="valuta-pret-produs">
+                <option value="lei">Lei</option>
+                <option value="euro">€</option>
+                <option value="dolar">$</option>
+              </select>
+              <br />
+              <label for="pret-fix" name="tip-pret">Preț fix</label>
+              <input
+                type="radio"
+                id="pret-fix"
+                name="tip-pret"
+                value="pret-fix"
+                checked
+              />
+              <label for="pret-negociabil" name="tip-pret"
+                >Preț negociabil</label
+              >
+              <input
+                type="radio"
+                id="pret-negociabil"
+                name="tip-pret"
+                value="pret-negociabil"
+              />
+              <label for="pret-licitat" name="tip-pret">Preț licitat</label>
+              <input
+                type="radio"
+                id="pret-licitat"
+                name="tip-pret"
+                value="pret-licitat"
+              />
+            </div>
+            <div class="informatii-produs">
+              <h2>Pune informații reale!</h2>
+              <label for="tehnica-tehnologie">Tehnică/Tehnologie</label>
+              <br />
+              <input
+                type="text"
+                id="tehnica-tehnologie"
+                name="tehnica-tehnologie"
+                placeholder="ex: Pictură în ulei"
+              />
+              <br />
+              <label for="suport-material">Suport/Material utilizat</label>
+              <br />
+              <input
+                type="text"
+                id="suport-material"
+                name="suport-material"
+                placeholder="ex: Pânză Canvas"
+              />
+              <br />
+              <label
+                for="dimensiunea-produsului"
+                class="dimensiunea-produsului"
+              >
+                Dimensiunea produsului
+              </label>
+              <br />
+              <small>
+                (Scrie dimensiunea produsului în CM (LxlxH) sau în MB (după
+                caz))
+              </small>
+              <br />
+              <input
+                type="text"
+                id="dimensiunea-produsului"
+                placeholder="ex: 60x40"
+                name="dimensiunea-produsului"
+              />
+            </div>
+            <div class="informatii-suplimentare">
+              <h2>Informații suplimentare</h2>
+              <label for="localizarea-produsului">Localizarea produsului</label>
+              <br />
+              <input
+                type="text"
+                id="localizarea-produsului"
+                name="localizarea-produsului"
+                placeholder="Localitate"
+              />
+              <br />
+              <label>Metode de livrare</label>
+              <br />
+              <label
+                for="curier"
+                name="metoda-de-livrare"
+                class="metoda-de-livrare"
+              >
+                Curierat
+              </label>
+              <input
+                type="checkbox"
+                id="curier"
+                name="metoda-de-livrare"
+                value="curier"
+              />
+              <label
+                for="posta"
+                name="metoda-de-livrare"
+                class="metoda-de-livrare"
+                >Poștă</label
+              >
+              <input
+                type="checkbox"
+                id="posta"
+                name="metoda-de-livrare"
+                value="posta"
+              />
+              <label
+                for="preper"
+                name="metoda-de-livrare"
+                class="metoda-de-livrare"
+              >
+                Predare personală
+              </label>
+              <input
+                type="checkbox"
+                id="preper"
+                name="metoda-de-livrare"
+                value="predare-personala"
+              />
+              <br />
+              <label for="timp-livrare">Timp pentru livrare</label>
+              <br />
+              <select name="timp-livrare" id="timp-livrare">
+                <option value="1">1 zi</option>
+                <option value="2">2 zile</option>
+                <option value="3">3 zile</option>
+                <option value="4">4 zile</option>
+                <option value="5">5 zile</option>
+                <option value="6">6 zile</option>
+                <option value="7">7 zile</option>
+                <option value="multe">Mai multe zile</option>
+              </select>
+            </div>
+            <div class="publicare-anunt">
+              <button type="submit">Publică produsul</button>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <script
       type="text/javascript"
@@ -248,6 +418,10 @@
       type="text/javascript"
       src="js/JS-elemente-comune/search-box.js"
     ></script>
-    <script src="js/Contul-meu/js-adauga-produs.js"></script>
+    <!-- <script src="js/Contul-meu/js-adauga-produs.js"></script> -->
+    <script
+      type="text/javascript"
+      src="js/JS-elemente-comune/arata-meniu-ascuns.js"
+    ></script>
   </body>
 </html>
