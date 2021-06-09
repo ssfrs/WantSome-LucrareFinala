@@ -341,6 +341,10 @@ div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.bor
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left div.vns-rating span {
@@ -353,6 +357,28 @@ div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.bor
   font-size: 2.8rem;
   padding: 1rem 0.5rem;
   color: #fafafa;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left div.vns-rating span:hover {
+  color: #2b2b2b;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left div.vns-rating span.doi:hover ~ span {
+  color: #2b2b2b;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left div.vns-rating span.trei:hover ~ span {
+  color: #2b2b2b;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left div.vns-rating span.patru:hover ~ span {
+  color: #2b2b2b;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left div.vns-rating span.cinci:hover ~ span {
+  color: #2b2b2b;
 }
 
 div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.enter-right-container {
@@ -393,8 +419,35 @@ div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div.vns-hid
 div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div.vns-cauta-hidden input {
   width: 90%;
   height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div.vns-cauta-hidden input::-webkit-input-placeholder {
+  color: white;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div.vns-cauta-hidden input:-ms-input-placeholder {
+  color: white;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div.vns-cauta-hidden input::-ms-input-placeholder {
+  color: white;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div.vns-cauta-hidden input::placeholder {
+  color: white;
+}
+
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div.vns-cauta-hidden input:focus {
+  border-bottom: 0.2rem solid #2b2b2b;
+  outline: none;
 }
 
 main div.content-main div.vertical-nav-sortare div.v-n-s ul.v-n-s-links li.vns-cauta:hover ~ li.vns-cauta-SGD {
