@@ -147,6 +147,7 @@
           </div>
           <div class="buton-favorite btnm-contul-meu">
             <span class="icon-favorite icon-buton-contul-meu"></span>
+            <span class="numar-produse-favorite">0</span>
             <h2 class="text-buton">Produse Favorite</h2>
           </div>
           <div class="buton-adauga-produs btnm-contul-meu">
@@ -161,6 +162,9 @@
         <section class="meniu-ascuns-comenzile-mele ma-contul-meu"></section>
         <section class="meniu-ascuns-produsele-mele ma-contul-meu"></section>
         <section class="meniu-ascuns-favorite ma-contul-meu"></section>
+
+        <!-- Start - ADAUGA produs -->
+
         <section class="meniu-ascuns-adauga-produs ma-contul-meu">
           <button class="btn-iesire-meniu-adauga-produs">
             <span class="icon-plus"></span>
@@ -205,8 +209,8 @@
               >
                 <option value="mic">Free</option>
                 <option value="mijlociu">Standard</option>
-                <option value="artizanat">Pro</option>
-                <option value="sculptura">Prime</option>
+                <option value="mare">Pro</option>
+                <option value="patrat">Prime</option>
               </select>
             </div>
             <div class="imagini-produs">
@@ -269,9 +273,9 @@
                 required="required"
               />
               <select name="valuta" id="valuta-pret-produs">
-                <option value="lei">Lei</option>
-                <option value="euro">€</option>
-                <option value="dolar">$</option>
+                <option value="Lei">Lei</option>
+                <option value="€">€</option>
+                <option value="$">$</option>
               </select>
               <br />
               <label for="pret-fix" name="tip-pret">Preț fix</label>
@@ -404,10 +408,13 @@
               </select>
             </div>
             <div class="publicare-anunt">
-              <button type="submit">Publică produsul</button>
+              <button type="submit" id="buton-adauga-produs">
+                Publică produsul
+              </button>
             </div>
           </form>
         </section>
+        <!-- END - ADAUGA produs -->
       </div>
     </main>
     <script
@@ -418,10 +425,17 @@
       type="text/javascript"
       src="js/JS-elemente-comune/search-box.js"
     ></script>
-    <!-- <script src="js/Contul-meu/js-adauga-produs.js"></script> -->
     <script
       type="text/javascript"
       src="js/JS-elemente-comune/arata-meniu-ascuns.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/JS-elemente-comune/produse/lista produse.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="JS/Contul-meu/JS-produse-favorite-contul-meu.js"
     ></script>
   </body>
 </html>
