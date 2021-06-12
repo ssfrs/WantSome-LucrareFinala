@@ -159,6 +159,21 @@ main {
             span.icon-buton-contul-meu {
               font-size: 9rem;
             }
+            span.numar-produse-favorite {
+              position: absolute;
+              left: 60%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 4rem;
+              font-weight: 800;
+              color: $contrast;
+              display: block;
+              padding: 0.5rem 1.7rem;
+              border-radius: 50%;
+              border: 0.5rem solid $header;
+              background-color: $alb;
+              box-shadow: 0 0 0 0.5rem $alb;
+            }
           }
           &.buton-adauga-produs {
             grid-area: adauga;

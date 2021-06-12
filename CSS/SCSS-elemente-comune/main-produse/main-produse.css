@@ -161,6 +161,10 @@ main div.content-main div.produse div.produs div.element div.card-meniu div.icon
   grid-area: icon-like;
 }
 
+main div.content-main div.produse div.produs div.element div.card-meniu div.icon.icon-like:hover span {
+  color: lightcoral;
+}
+
 main div.content-main div.produse div.produs div.element div.card-meniu div.icon.icon-like.icon-like-active span {
   color: red;
 }
