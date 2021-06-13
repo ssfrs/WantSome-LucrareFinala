@@ -49,7 +49,3 @@ function sortareProduse() {
     sortare('sculptura', 'sculp');
 }
 
-// const urlSearc = new URLSearchParams(window.location.search);
-// const param = Object.fromEntries(urlSearc.entries());
-
-// console.log(param);
