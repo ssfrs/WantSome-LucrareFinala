@@ -104,7 +104,7 @@
         </div>
 
         <div class="right-side">
-          <form action="index.html" class="formular">
+          <form class="formular" id="form-singup-first-page">
             <label for="firstName" class="date">First Name</label>
             <br />
             <input
@@ -174,11 +174,94 @@
             />
             <br />
             <input type="checkbox" id="terms" />
-            <label for="terms" class="terms"
-              >I agree to the <a href="#">terms of service</a>.</label
-            >
+            <label for="terms" class="terms">
+              I agree to the <a href="#">terms of service</a>.
+            </label>
             <br />
-            <button type="submit">Sing Up</button>
+            <button id="btn-form-singup-next">Next</button>
+          </form>
+
+          <!-- --------------------------- -->
+
+          <form class="form-singup-second-page" id="form-singup-second-page">
+            <div class="centrare-second-page">
+              <label for="pozaProfil" class="poza-profil">Poza Profil</label>
+              <br />
+              <input
+                type="text"
+                name="pozaProfil"
+                id="pozaProfil"
+                class="text-poza-profil"
+                placeholder="Link poza de profil"
+              />
+              <br />
+              <label class="text-categoria-artistului">
+                Selecteaza categoriile de activare.
+              </label>
+              <br />
+              <label
+                for="pictura"
+                name="categoria-artistului"
+                class="categoria-artistului"
+              >
+                Pictor
+              </label>
+              <input
+                type="checkbox"
+                id="pictura"
+                name="checkbox-categoria-artistului"
+                value="Pictor"
+              />
+              <label
+                for="arta-digitala"
+                name="categoria-artistului"
+                class="categoria-artistului"
+              >
+                Graphic Designer
+              </label>
+              <input
+                type="checkbox"
+                id="arta-digitala"
+                name="checkbox-categoria-artistului"
+                value="Graphic Designer"
+              />
+              <label
+                for="artizanat"
+                name="categoria-artistului"
+                class="categoria-artistului"
+              >
+                Craft-man
+              </label>
+              <input
+                type="checkbox"
+                id="artizanat"
+                name="checkbox-categoria-artistului"
+                value="Craft-man"
+              />
+              <label
+                for="sculptura"
+                name="categoria-artistului"
+                class="categoria-artistului"
+              >
+                Sculptor
+              </label>
+              <input
+                type="checkbox"
+                id="sculptura"
+                name="checkbox-categoria-artistului"
+                value="Sculptor"
+              />
+              <br />
+              <textarea
+                name="descrierea-artistului"
+                id="descrierea-artistului"
+                placeholder="Spune ceva despre tine!"
+              ></textarea>
+              <br />
+              <button id="btn-form-singup-back">Back</button>
+              <br />
+              <button id="btn-form-singup-finish">SingUp</button>
+            </div>
           </form>
         </div>
       </div>
@@ -192,5 +275,6 @@
       type="text/javascript"
       src="js/JS-elemente-comune/search-box.js"
     ></script>
+    <script src="js/sing-Up/lista-conturi.js"></script>
   </body>
 </html>
