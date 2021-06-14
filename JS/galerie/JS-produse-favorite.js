@@ -6,7 +6,7 @@
     if (listaProduseFavorite != null) {
       listaProduseFavorite = JSON.parse(localStorage.getItem('ListaProduseFavorite'));
     } else {
-        listaProduseFavorite = [];
+        listaProduseFavorite = [0];
         localStorage.setItem('ListaProduse', JSON.stringify(listaProduse));
     }
 
