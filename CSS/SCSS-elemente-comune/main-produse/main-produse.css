@@ -63,6 +63,9 @@ main div.content-main div.produse div.produs div.element {
   width: calc(100% - 0.5rem);
   height: calc(100% - 0.5rem);
   background-color: #177455;
+  background-image: url(../../../IMG/no-image-avaible.jpg);
+  background-size: cover;
+  background-position: center;
   border-radius: 2rem;
   overflow: hidden;
   -webkit-box-shadow: 0.2rem 0.2rem 0.7rem -0.3rem #2b2b2b;
