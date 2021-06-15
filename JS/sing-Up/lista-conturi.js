@@ -1,21 +1,5 @@
-const butonFormularSingUpNext = document.getElementById('btn-form-singup-next');
-const butonFormularSingUpBack = document.getElementById('btn-form-singup-back');
-const butonFormularSingUpFinish = document.getElementById('btn-form-singup-finish');
-const formularPaginaDoi = document.getElementById('form-singup-second-page');
-
-butonFormularSingUpNext.onclick = function (e) {
-    e.preventDefault();
-    formularPaginaDoi.style.display = 'flex';
-    formularPaginaDoi.style.opacity = '1';
-}
-
-butonFormularSingUpBack.onclick = function (e) {
-    e.preventDefault();
-    formularPaginaDoi.style.display = 'none';
-    formularPaginaDoi.style.opacity = '0.5';
-}
-
 let listaConturi = JSON.parse(localStorage.getItem('ListaConturi'));
+const butonFormularSingUpFinish = document.getElementById('btn-form-singup-finish');
 
 if (listaConturi != null) {
     listaConturi = JSON.parse(localStorage.getItem('ListaConturi'));
@@ -74,3 +58,5 @@ function categorieCheckBox(idCategorie) {
             return valoareCategorie;
         }
 };
+
+    
