@@ -101,10 +101,14 @@
       <div class="main-container">
         <div class="left-side">
           <div class="formLogo"><span class="icon-logo"></span></div>
+          <p class="motivatie">
+            Înscrie-te acum, <br />
+            Gratis!
+          </p>
         </div>
 
         <div class="right-side">
-          <form class="formular" id="form-singup-first-page">
+          <form class="formular" id="form-singup-first-page" method="POST">
             <label for="firstName" class="date">First Name</label>
             <br />
             <input
@@ -174,9 +178,10 @@
             />
             <br />
             <input type="checkbox" id="terms" />
-            <label for="terms" class="terms">
-              I agree to the <a href="#">terms of service</a>.
+            <label for="terms" class="terms" id="terms-label">
+              I agree to the
             </label>
+            <a href="#">terms of service</a>.
             <br />
             <button id="btn-form-singup-next">Next</button>
           </form>
@@ -275,6 +280,10 @@
       type="text/javascript"
       src="js/JS-elemente-comune/search-box.js"
     ></script>
-    <script src="js/sing-Up/lista-conturi.js"></script>
+    <script type="text/javascript" src="js/sing-Up/lista-conturi.js"></script>
+    <script
+      type="text/javascript"
+      src="js/sing-Up/funtionalitati-minore.js"
+    ></script>
   </body>
 </html>
