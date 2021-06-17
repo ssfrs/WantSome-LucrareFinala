@@ -1,3 +1,7 @@
+{
+
+let listaConturi = JSON.parse(localStorage.getItem('ListaConturi'));
+console.log(listaConturi);
 const butonFormularSingUpNext = document.getElementById('btn-form-singup-next');
 const butonFormularSingUpBack = document.getElementById('btn-form-singup-back');
 const formularSingUpPaginaUnu = document.getElementById('form-singup-first-page');
@@ -9,6 +13,10 @@ const textParola = document.getElementById('text-input-parola');
 const inputParolaReintrodusa = document.getElementById('rePassword');
 const inputParolaIntrodusa = document.getElementById('password');
 const inputEmailIntrodus = document.getElementById('email');
+const inputUsernameIntrodus = document.getElementById('username');
+const labelEmail = document.getElementById('label-email');
+const labelUsername = document.getElementById('label-username');
+
 
 
 butonFormularSingUpBack.onclick = function (e) {
@@ -21,11 +29,13 @@ butonFormularSingUpNext.addEventListener('click', function(e) {
     e.preventDefault();
     verificareContinutInputuri();
     verificareEmail();
+    verificareExistentaEmail();
+    verificareExistentaUsername();
     verificareParola();
     verificareRepetareParola();
     termsChecked();
 
-    if (agreeTerms.checked === true && verificareContinutInputuri() == 0 && verificareRepetareParola() === true && verificareParola() === true && verificareEmail() === true) {
+    if (agreeTerms.checked === true && verificareContinutInputuri() == 0 && verificareRepetareParola() === true && verificareParola() === true && verificareEmail() === true && verificareExistentaEmail() === true && verificareExistentaUsername() === true) {
         formularPaginaDoi.style.display = 'flex';
         formularPaginaDoi.style.opacity = '1';
     }
@@ -125,6 +135,43 @@ function verificareEmail() {
     }
   };
 
+  function verificareExistentaEmail() { 
+
+    const email = inputEmailIntrodus.value;
+    // const username = inputUsernameIntrodus.value;
+
+    let artist = listaConturi.find(function(artist){
+      return artist.eMail === email
+    });
+    if(artist != null) {
+        labelEmail.textContent = 'E-mail - Este deja folosit!';
+        labelEmail.style.color = 'red';
+        return false;
+    } else {
+        labelEmail.textContent = 'E-mail';
+        labelEmail.style.color = 'black';
+        return true;
+    }
+  };
+
+  function verificareExistentaUsername() { 
+
+    const username = inputUsernameIntrodus.value;
+
+    let artist = listaConturi.find(function(artist){
+      return artist.username === username
+    });
+    if(artist != null) {
+        labelUsername.textContent = 'Username - Este deja folosit!';
+        labelUsername.style.color = 'red';
+        return false;
+    } else {
+        labelUsername.textContent = 'Username';
+        labelUsername.style.color = 'black';
+        return true;
+    }
+  };
+
 // ---------- Revenire culoare text "terms"
 agreeTerms.addEventListener('change', function() {
     if (textagreeTerms.style.color == 'red') {
@@ -155,3 +202,22 @@ inputEmailIntrodus.addEventListener('input', function() {
         inputEmailIntrodus.style.boxShadow = '0 0 0 0.1rem red';
     };
 })
+
+// ----------- Revenire text Email
+inputEmailIntrodus.addEventListener('input', function() {
+    if (labelEmail.style.color == 'red') {
+        labelEmail.textContent = 'E-mail';
+        labelEmail.style.color = 'black';
+    }
+});
+
+// ------------Revenire text Username
+
+inputUsernameIntrodus.addEventListener('input', function() {
+    if (labelUsername.style.color == 'red') {
+        labelUsername.textContent = 'Username';
+        labelUsername.style.color = 'black';
+    }
+})
+
+}

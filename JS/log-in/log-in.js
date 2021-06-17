@@ -1,5 +1,4 @@
 let listaConturi = JSON.parse(localStorage.getItem('ListaConturi'));
-console.log(listaConturi);
 
 const inputEmail = document.getElementById('email'); 
 const inputParola = document.getElementById('password'); 
