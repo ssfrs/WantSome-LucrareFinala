@@ -1,7 +1,6 @@
 {
 
 let listaConturi = JSON.parse(localStorage.getItem('ListaConturi'));
-console.log(listaConturi);
 const butonFormularSingUpNext = document.getElementById('btn-form-singup-next');
 const butonFormularSingUpBack = document.getElementById('btn-form-singup-back');
 const formularSingUpPaginaUnu = document.getElementById('form-singup-first-page');
