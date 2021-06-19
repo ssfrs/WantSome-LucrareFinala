@@ -14,7 +14,7 @@ const adaugaProdus = (ev)=>{
     const butonIesireMeniuAdaugaProdus = document.querySelector('button.btn-iesire-meniu-adauga-produs');
 
     let produs = {
-        id: Date.now(),
+        id: `${listaProduse.length}-${Date.now()}`,
         nume: document.getElementById('nume-produs').value,
         categorie: document.getElementById('categoria-produsului').value,
         planVizualizare: document.getElementById('plan-vizualizare').value,

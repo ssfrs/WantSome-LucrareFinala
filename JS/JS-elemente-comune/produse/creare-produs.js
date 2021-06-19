@@ -8,6 +8,7 @@ for (let index in listaProduse) {
     produs.className = 'produs';
     produs.className += ` ${listaProduse[index].planVizualizare}`;
     produs.className += ` ${listaProduse[index].categorie}`;
+    produs.id = listaProduse[index].id;
     containerProduse.appendChild(produs);
 
         const element = document.createElement('div');

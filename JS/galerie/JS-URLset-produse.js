@@ -2,10 +2,10 @@ const urlSearch = new URLSearchParams(window.location.search);
 const param = Object.fromEntries(urlSearch.entries());
 const categorie = urlSearch.get('categorie');
 // console.log(urlSearch);
-console.log(param);
+// console.log(param);
 
 param['ana'] = 'marmelada';
-console.log(param);
+// console.log(param);
 
   if (categorie) {
     document.getElementById(`${categorie}`).click();
@@ -27,5 +27,5 @@ const url = new URL(window.location);
 url.searchParams.set('foo', 'bar');
 window.history.pushState(param, '', url);
 // window.history.replaceState({}, '', url);
-console.log(window.location.search);
+// console.log(window.location.search);
 const picturaB = document.getElementById('pictura');
