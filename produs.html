@@ -99,23 +99,23 @@
 <!-- START - Navigator sortare -->
         <nav class="nav-sortare">
             <ul class="elemente-nav-sortare">
-                <li class="special link-nav-sortare container-nav-sortare-activ">
-                    <a class="element-nav-sortare buton-nav-sortare-activ" data-id="1" href=""><span data-id="1" class="icon-special"></span></a>
+                <li class="special link-nav-sortare container-nav-sortare-activ" id="special">
+                    <div class="element-nav-sortare buton-nav-sortare-activ" data-id="1" href=""><span data-id="1" class="icon-special"></span></div>
                 </li>
-                <li class="pict link-nav-sortare">
-                    <a class="element-nav-sortare" data-id="2" href=""><span data-id="2" class="icon-pict"></span></a>
+                <li class="pict link-nav-sortare" id="pictura">
+                    <div class="element-nav-sortare" data-id="2"><span data-id="2" class="icon-pict"></span></div>
                 </li>
-                <li class="digi link-nav-sortare">
-                    <a class="element-nav-sortare" data-id="3" href=""><span data-id="3" class="icon-digi"></span></a>
+                <li class="digi link-nav-sortare" id="arta-digitala">
+                    <div class="element-nav-sortare" data-id="3"><span data-id="3" class="icon-digi"></span></div>
                 </li>
-                <li class="artiz link-nav-sortare">
-                    <a class="element-nav-sortare" data-id="4" href=""><span data-id="4" class="icon-artiz"></span></a>
+                <li class="artiz link-nav-sortare" id="artizanat">
+                    <div class="element-nav-sortare" data-id="4"><span data-id="4" class="icon-artiz"></span></div>
                 </li>
-                <li class="sculp link-nav-sortare">
-                    <a class="element-nav-sortare" data-id="5" href=""><span data-id="5" class="icon-sculp"></span></a>
+                <li class="sculp link-nav-sortare" id="sculptura">
+                    <div class="element-nav-sortare" data-id="5"><span data-id="5" class="icon-sculp"></span></div>
                 </li>
-                <li class="personaliz link-nav-sortare">
-                    <a class="element-nav-sortare" data-id="6" href=""><span data-id="6" class="icon-personaliz"></span></a>
+                <li class="personaliz link-nav-sortare" id="personalizare">
+                    <div class="element-nav-sortare" data-id="6"><span data-id="6" class="icon-personaliz"></span></div>
                 </li>
 
                 <li class="semn-nav-sortare semn-special semn-nav-sortare-activ"><span class="icon-semn"></span></li>
@@ -129,7 +129,7 @@
 <!-- END - Navigator sortare -->
 
         <div class="content-main">
-            <div class="produs">
+            <div class="produs-vizitat">
                 <div class="prezentare">
                     <img src="img/paint12.jpg" alt="paint">
                 </div>
@@ -151,10 +151,18 @@
                     <p class="scurta-descriere">So perhaps, you've generated some fancy text, and you're content that you can now copy and paste your fancy text in the comments section of funny cat videos, but perhaps you're wondering how it's even possible to change the font of your text? Is it some sort of hack? </p>
                     <hr>
                     <div class="carusel-vizualizare">
-                        <div class="prima-imagine"></div>
-                        <div class="a-doua-imagine"></div>
-                        <div class="a-treia-imagine"></div>
-                        <div class="a-patra-imagine"></div>
+                        <div class="prima-imagine">
+                            <img src="" alt="imaginePrincipala">
+                        </div>
+                        <div class="a-doua-imagine">
+                            <img src="" alt="imagineSecundara">
+                        </div>
+                        <div class="a-treia-imagine">
+                            <img src="" alt="imagineSecundara">
+                        </div>
+                        <div class="a-patra-imagine">
+                            <img src="" alt="imagineSecundara">
+                        </div>
                     </div>
                     <hr>
                     <div class="buton-cumpara">
@@ -186,6 +194,16 @@
                             <span class="icon-trimite"></span>
                         </div>
                     </div>
+                    <div class="buton-oferteaza">
+                        <div class="buton-logo-oferteaza">
+                            <span class="icon-ofertaFill"></span>
+                            <span class="icon-oferta"></span>
+                        </div>
+                        <input id="oferteaza" type="text" placeholder="Ofertează">
+                        <div class="buton-logo-enter">
+                            <span class="icon-trimite"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="bara-de-informatii"></div>
@@ -194,5 +212,7 @@
     </main>
     <script type="text/javascript" src="js/JS-elemente-comune/header-right-bar-responsive.js"></script>
     <script type="text/javascript" src="js/JS-elemente-comune/search-box.js"></script>
+    <script type="text/javascript" src="js/produs/JS-vizualizare-produs.js"></script>
+    <script type="text/javascript" src="js/produs/JS-link-galerie.js"></script>
 </body>
 </html>
