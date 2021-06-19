@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fjhh97');
-  src:  url('fonts/icomoon.eot?fjhh97#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fjhh97') format('truetype'),
-    url('fonts/icomoon.woff?fjhh97') format('woff'),
-    url('fonts/icomoon.svg?fjhh97#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?rh79kx');
+  src:  url('fonts/icomoon.eot?rh79kx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rh79kx') format('truetype'),
+    url('fonts/icomoon.woff?rh79kx') format('woff'),
+    url('fonts/icomoon.svg?rh79kx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,29 +25,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-favorite:before {
+.icon-oferta:before {
   content: "\e900";
 }
-.icon-trimite:before {
+.icon-ofertaFill:before {
   content: "\e901";
 }
-.icon-liciteaza-fill:before {
+.icon-favorite:before {
   content: "\e902";
 }
-.icon-liciteaza:before {
+.icon-trimite:before {
   content: "\e903";
 }
-.icon-negociaza-fill:before {
+.icon-liciteaza-fill:before {
   content: "\e904";
 }
-.icon-negociaza:before {
+.icon-liciteaza:before {
   content: "\e905";
 }
-.icon-enter:before {
+.icon-negociaza-fill:before {
   content: "\e906";
 }
-.icon-fill-search:before {
+.icon-negociaza:before {
   content: "\e907";
+}
+.icon-enter:before {
+  content: "\e908";
+}
+.icon-fill-search:before {
+  content: "\e909";
 }
 .icon-semn-cont:before {
   content: "\e91c";
@@ -59,106 +65,106 @@
   content: "\e91e";
 }
 .icon-pict:before {
-  content: "\e909";
-}
-.icon-digi:before {
   content: "\e90a";
 }
-.icon-artiz:before {
+.icon-digi:before {
   content: "\e90b";
 }
-.icon-sculp:before {
+.icon-artiz:before {
   content: "\e90c";
 }
-.icon-personaliz:before {
+.icon-sculp:before {
   content: "\e90d";
 }
-.icon-bani:before {
+.icon-personaliz:before {
   content: "\e90e";
 }
-.icon-pictura:before {
+.icon-bani:before {
   content: "\e90f";
 }
-.icon-locatie:before {
+.icon-pictura:before {
   content: "\e910";
 }
-.icon-transport:before {
+.icon-locatie:before {
   content: "\e911";
 }
-.icon-arta-digitala:before {
+.icon-transport:before {
   content: "\e912";
 }
-.icon-artizanat:before {
+.icon-arta-digitala:before {
   content: "\e913";
 }
-.icon-durata-transport:before {
+.icon-artizanat:before {
   content: "\e914";
 }
-.icon-cauta:before {
+.icon-durata-transport:before {
   content: "\e915";
 }
-.icon-parola:before {
+.icon-cauta:before {
   content: "\e916";
 }
-.icon-personalizare:before {
+.icon-parola:before {
   content: "\e917";
 }
-.icon-rating:before {
+.icon-personalizare:before {
   content: "\e918";
 }
-.icon-sculptura:before {
+.icon-rating:before {
   content: "\e919";
 }
-.icon-sorteaza:before {
+.icon-sculptura:before {
   content: "\e91a";
 }
-.icon-special:before {
+.icon-sorteaza:before {
   content: "\e91b";
 }
-.icon-sgdreapta:before {
-  content: "\e908";
-}
-.icon-sgstanga:before {
+.icon-special:before {
   content: "\e91f";
 }
-.icon-logo:before {
+.icon-sgdreapta:before {
   content: "\e920";
 }
-.icon-cont:before {
+.icon-sgstanga:before {
   content: "\e921";
 }
-.icon-cos:before {
+.icon-logo:before {
   content: "\e922";
 }
-.icon-plus:before {
+.icon-cont:before {
   content: "\e923";
 }
-.icon-artist:before {
+.icon-cos:before {
   content: "\e924";
 }
-.icon-galerie:before {
+.icon-plus:before {
   content: "\e925";
 }
-.icon-home:before {
+.icon-artist:before {
   content: "\e926";
 }
-.icon-pencil2:before {
+.icon-galerie:before {
   content: "\e927";
 }
-.icon-quill:before {
+.icon-home:before {
   content: "\e928";
 }
-.icon-droplet:before {
+.icon-pencil2:before {
   content: "\e929";
 }
-.icon-image:before {
+.icon-quill:before {
   content: "\e92a";
 }
-.icon-images:before {
+.icon-droplet:before {
   content: "\e92b";
 }
-.icon-file-picture:before {
+.icon-image:before {
   content: "\e92c";
+}
+.icon-images:before {
+  content: "\e92d";
+}
+.icon-file-picture:before {
+  content: "\e92e";
 }
 .icon-folder:before {
   content: "\e92f";
