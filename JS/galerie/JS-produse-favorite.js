@@ -20,19 +20,20 @@
     localStorage.setItem('ListaProduseFavorite', JSON.stringify(listaProduseFavorite));
 
     for (let i in toateProdusele) {
-        toateProdusele[i].onclick = function() {
-        toateProdusele[i].classList.toggle(`${numeToogle}`);
-        produseFavorite = document.querySelectorAll(`.${numeToogle}`);
-        numarProduseFavorite = produseFavorite.length;
-        listaProduseFavorite = [numarProduseFavorite];
-        localStorage.setItem('ListaProduseFavorite', JSON.stringify(listaProduseFavorite));
+        toateProdusele[i].onclick = function(e) {
+            e.stopPropagation();
+            toateProdusele[i].classList.toggle(`${numeToogle}`);
+            produseFavorite = document.querySelectorAll(`.${numeToogle}`);
+            numarProduseFavorite = produseFavorite.length;
+            listaProduseFavorite = [numarProduseFavorite];
+            localStorage.setItem('ListaProduseFavorite', JSON.stringify(listaProduseFavorite));
 
 //  ----------------- Update lista produse cu noua clasa
 
-        let clasaProdus = toateProdusele[i].className;
-        let listaProduse = JSON.parse(localStorage.getItem('ListaProduse'));
-        listaProduse[i].activ = `${clasaProdus}`;
-        localStorage.setItem('ListaProduse', JSON.stringify(listaProduse));
+            let clasaProdus = toateProdusele[i].className;
+            let listaProduse = JSON.parse(localStorage.getItem('ListaProduse'));
+            listaProduse[i].activ = `${clasaProdus}`;
+            localStorage.setItem('ListaProduse', JSON.stringify(listaProduse));
       }
     }
 }
