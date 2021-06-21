@@ -49,6 +49,12 @@ body {
         grid-template-columns: 1fr;
     padding: 1rem 4rem 1rem 3rem;
   }
+  main.main div.content-main div.produse div.produs.mic {
+    height: 35rem;
+  }
+  main.main div.content-main div.produse div.produs.mijlociu {
+    height: 55rem;
+  }
   main.main div.content-main div.produse div.produs.patrat {
     -ms-grid-column-span: 1;
         grid-column-end: span 1;

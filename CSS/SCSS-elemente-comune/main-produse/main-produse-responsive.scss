@@ -62,6 +62,12 @@ body {
         grid-template-columns: 1fr;
         padding: 1rem 4rem 1rem 3rem;
         div.produs {
+          &.mic {
+            height: 35rem;
+          }
+          &.mijlociu {
+            height: 55rem;
+          }
           &.patrat {
             grid-column-end: span 1;
             grid-row-end: span 4;
