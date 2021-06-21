@@ -4,7 +4,8 @@ $tableta: 768px;
 $tableta-mica: 695px;
 $laptop: 1024px;
 $monitor-normal: 1200px;
-$monitor-mare: 1201px;
+$monitor-mare: 2000px;
+$monitor-mic: 900px;
 
 @mixin telefon {
   @media (max-width: #{$telefon}) {

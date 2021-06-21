@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1024px) {
+  main.main div.content-main {
+    padding-top: 2rem;
+    display: block;
+  }
+  main.main div.content-main div.produs-vizitat {
+    width: 100vw;
+    min-width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.main div.content-main div.produs-vizitat div.prezentare {
+    width: calc(100vw - 10rem);
+  }
+  main.main div.content-main div.produs-vizitat div.detalii {
+    margin-bottom: 5rem;
+    margin-top: -5rem;
+    max-width: 60rem;
+    width: calc(100vw - 10rem);
+    border-radius: 0 0 5rem 5rem;
+    padding-top: 5rem;
+  }
+  main.main div.content-main div.produs-vizitat div.detalii div.spec-si-pret ul.informatii-despre-lucrare {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main.main div.content-main div.produs-vizitat div.prezentare {
+    width: 95%;
+  }
+  main.main div.content-main div.produs-vizitat div.detalii {
+    width: 80%;
+    max-width: 80%;
+  }
+  main.main div.content-main div.produs-vizitat div.detalii div.spec-si-pret ul.informatii-despre-lucrare {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main.main div.content-main div.produs-vizitat div.prezentare {
+    width: 105%;
+  }
+  main.main div.content-main div.produs-vizitat div.detalii {
+    width: 100%;
+    max-width: 100%;
+  }
+  main.main div.content-main div.produs-vizitat div.detalii div.spec-si-pret ul.informatii-despre-lucrare {
+    margin-left: 2rem;
+  }
+}
+/*# sourceMappingURL=responsive-container-produs.css.map */

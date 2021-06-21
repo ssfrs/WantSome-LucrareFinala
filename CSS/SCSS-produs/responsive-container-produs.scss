@@ -1,0 +1,77 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/responsive";
+@import "../SCSS-imports/dimensiuni";
+
+@media only screen and (max-width: $laptop) {
+  main.main {
+    div.content-main {
+      padding-top: 2rem;
+      display: block;
+      div.produs-vizitat {
+        width: 100vw;
+        min-width: 100vw;
+        flex-direction: column;
+
+        div.prezentare {
+          width: calc(100vw - 10rem);
+        }
+        div.detalii {
+          margin-bottom: 5rem;
+          margin-top: -5rem;
+          max-width: 60rem;
+          width: calc(100vw - 10rem);
+          border-radius: 0 0 5rem 5rem;
+          padding-top: 5rem;
+          div.spec-si-pret {
+            ul.informatii-despre-lucrare {
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tableta) {
+  main.main {
+    div.content-main {
+      div.produs-vizitat {
+        div.prezentare {
+          width: 95%;
+        }
+        div.detalii {
+          width: 80%;
+          max-width: 80%;
+          div.spec-si-pret {
+            ul.informatii-despre-lucrare {
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $telefon) {
+  main.main {
+    div.content-main {
+      div.produs-vizitat {
+        div.prezentare {
+          width: 105%;
+        }
+        div.detalii {
+          width: 100%;
+          max-width: 100%;
+          div.spec-si-pret {
+            ul.informatii-despre-lucrare {
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

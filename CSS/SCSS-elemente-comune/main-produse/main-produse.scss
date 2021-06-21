@@ -9,7 +9,8 @@
 body {
   @extend %body;
 }
-main {
+main.main {
+  min-height: calc(100% - 12rem);
   div.content-main {
     top: 6.4rem;
     position: relative;
@@ -24,9 +25,9 @@ main {
       max-width: 170rem;
       height: fit-content;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem));
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 30rem));
       grid-gap: 0rem;
-      grid-auto-flow: dense;
+      grid-auto-flow: row dense;
       padding: 1rem 5rem 1rem 5rem;
       justify-content: center;
 

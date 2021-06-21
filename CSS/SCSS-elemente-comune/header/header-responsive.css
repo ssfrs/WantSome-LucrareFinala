@@ -82,18 +82,12 @@
 }
 
 @media screen and (max-width: 480px) {
-  html {
-    font-size: 8px;
-  }
   header nav.nav-header {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 370px) {
-  html {
-    font-size: 7px;
-  }
   header nav.nav-header {
     width: 95%;
   }

@@ -11,7 +11,7 @@ body {
 }
 
 @media screen and (max-width: $monitor-normal) {
-  main {
+  main.main {
     div.content-main {
       div.produse {
         padding: 1rem 3rem 1rem 2rem;
@@ -26,7 +26,7 @@ body {
 }
 
 @media screen and (max-width: $laptop) {
-  main {
+  main.main {
     div.content-main {
       div.produse {
         padding: 1rem 3rem 1rem 2rem;
@@ -41,7 +41,7 @@ body {
 }
 
 @media screen and (max-width: $tableta) {
-  main {
+  main.main {
     div.content-main {
       div.produse {
         padding: 1rem 2rem 1rem 1rem;
@@ -56,7 +56,7 @@ body {
 }
 
 @media screen and (max-width: $tableta-mica) {
-  main {
+  main.main {
     div.content-main {
       div.produse {
         grid-template-columns: 1fr;
@@ -64,6 +64,8 @@ body {
         div.produs {
           &.patrat {
             grid-column-end: span 1;
+            grid-row-end: span 4;
+            height: 100rem;
           }
         }
       }
@@ -72,7 +74,7 @@ body {
 }
 
 @media screen and (max-width: $telefon) {
-  main {
+  main.main {
     div.content-main {
       div.produse {
         grid-template-columns: 1fr;
@@ -80,6 +82,8 @@ body {
         div.produs {
           &.patrat {
             grid-column-end: span 1;
+            grid-row-end: span 4;
+            height: 100rem;
           }
         }
       }

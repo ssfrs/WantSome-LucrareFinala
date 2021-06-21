@@ -1,76 +1,36 @@
-@media only screen and (max-width: 1200px) {
-  html {
-    font-size: 9px;
-  }
-  html main {
-    min-height: 75rem;
-    height: calc(100vh - $H-header-fill);
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  html {
-    font-size: 8px;
-  }
-  html main {
-    min-height: 75rem;
-    height: calc(100vh - $H-header-fill);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  main {
-    min-height: 75rem;
-    height: calc(100vh - $H-header-fill);
+@media only screen and (max-width: 900px) {
+  main div.main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main div.main-container div.left-side {
-    width: 9.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 13rem;
+    width: 80%;
+    border-radius: 3.8rem 3.8rem 0 0;
   }
   main div.main-container div.left-side div.formLogo {
-    font-size: 6rem;
-    -webkit-transform: rotateZ(270deg);
-            transform: rotateZ(270deg);
+    padding: 1rem 0 1rem 0;
+    font-size: 10rem;
+  }
+  main div.main-container div.left-side p.motivatie {
+    padding-top: 0rem;
+    font-size: 3rem;
+    margin-top: -2rem;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  main {
-    min-height: 75rem;
-    height: calc(100vh - $H-header-fill);
-    display: block;
-  }
   main div.main-container {
-    display: block;
-    margin: auto;
+    width: 100%;
   }
   main div.main-container div.left-side {
-    position: relative;
-    margin: auto;
     width: 80%;
-    border-radius: 1rem 1rem 0 0;
-    height: 10rem;
-    top: 5rem;
-  }
-  main div.main-container div.left-side div.formLogo {
-    font-size: 7rem;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-    top: -3.5rem;
-    text-shadow: 0 0 2rem black;
   }
   main div.main-container div.right-side {
-    margin: auto;
-    width: 95%;
-    border-radius: 1rem;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main-responsive.css.map */

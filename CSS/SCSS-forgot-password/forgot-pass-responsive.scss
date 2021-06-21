@@ -1,0 +1,36 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/responsive";
+@import "../SCSS-imports/dimensiuni";
+
+@media only screen and (max-width: $monitor-mic) {
+  main {
+    div.forgotPassword {
+      flex-direction: column;
+      gap: 1rem;
+
+      div.formLogo {
+        height: 20rem;
+      }
+      div.email-area {
+        border-radius: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $telefon) {
+  main {
+    div.forgotPassword {
+      div.email-area {
+        width: 45rem;
+        form.formular {
+          padding-top: 2rem;
+          input.text {
+            padding: 2rem 1rem 2rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}

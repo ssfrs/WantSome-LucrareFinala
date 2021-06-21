@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AAKA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACtC,AACE,IADE,CACF,GAAG,AAAA,eAAe,CAAC;IACjB,cAAc,EAAE,MAAM;IACtB,GAAG,EAAE,IAAI;GAQV;EAXH,AAKI,IALA,CACF,GAAG,AAAA,eAAe,CAIhB,GAAG,AAAA,SAAS,CAAC;IACX,MAAM,EAAE,KAAK;GACd;EAPL,AAQI,IARA,CACF,GAAG,AAAA,eAAe,CAOhB,GAAG,AAAA,WAAW,CAAC;IACb,aAAa,EAAE,IAAI;GACpB;;;AAKP,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACtC,AAEI,IAFA,CACF,GAAG,AAAA,eAAe,CAChB,GAAG,AAAA,WAAW,CAAC;IACb,KAAK,EAAE,KAAK;GAOb;EAVL,AAIM,IAJF,CACF,GAAG,AAAA,eAAe,CAChB,GAAG,AAAA,WAAW,CAEZ,IAAI,AAAA,SAAS,CAAC;IACZ,WAAW,EAAE,IAAI;GAIlB;EATP,AAMQ,IANJ,CACF,GAAG,AAAA,eAAe,CAChB,GAAG,AAAA,WAAW,CAEZ,IAAI,AAAA,SAAS,CAEX,KAAK,AAAA,KAAK,CAAC;IACT,OAAO,EAAE,mBAAmB;GAC7B",
+    "sources": [
+        "forgot-pass-responsive.scss",
+        "../SCSS-imports/_culori.scss",
+        "../SCSS-imports/_extend.scss",
+        "../SCSS-imports/_culori.scss",
+        "../SCSS-imports/_responsive.scss",
+        "../SCSS-imports/_dimensiuni.scss"
+    ],
+    "names": [],
+    "file": "forgot-pass-responsive.css"
+}

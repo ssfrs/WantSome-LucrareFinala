@@ -1,0 +1,52 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/responsive";
+@import "../SCSS-imports/dimensiuni";
+
+@media screen and (max-width: $monitor-mare) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: $monitor-normal) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: $monitor-mic) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: $tableta) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: $tableta-mica) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: $telefon) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: $telefon-mic) {
+  html {
+    font-size: 7px;
+  }
+}
