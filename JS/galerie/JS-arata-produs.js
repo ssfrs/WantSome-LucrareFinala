@@ -3,8 +3,8 @@
     let produse = containerProduse.children;
     let listaProduse = JSON.parse(localStorage.getItem('ListaProduse'));
     // let numarProduse = listaProduse.lenght;
-    console.log(produse);
-    console.log(listaProduse);
+    // console.log(produse);
+    // console.log(listaProduse);
 
     for (let i=0; i<produse.length; i++) {
         produse[i].onclick = function(e) {
