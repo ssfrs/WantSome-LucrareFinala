@@ -292,6 +292,10 @@ div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.bor
   background-color: #5a5a5a;
 }
 
+div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left p.active {
+  background-color: #414141;
+}
+
 div.content-main div.vertical-nav-sortare div.v-n-s div.v-n-s-hidden div div.border-left input {
   position: relative;
   width: 80;

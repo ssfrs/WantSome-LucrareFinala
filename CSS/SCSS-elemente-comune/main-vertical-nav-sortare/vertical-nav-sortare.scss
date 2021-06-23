@@ -194,6 +194,9 @@ div.content-main {
                     &:hover {
                       background-color: $ton;
                     }
+                    &.active {
+                      background-color: $tonInchis;
+                    }
                   }
                   input {
                     position: relative;
