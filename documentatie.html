@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS HEADER -->
+    <link rel="stylesheet" href="CSS/SCSS-elemente-comune/header/header.css" />
+    <!-- CSS HEADER - responsive -->
+    <link
+      rel="stylesheet"
+      href="CSS/SCSS-elemente-comune/header/header-responsive.css"
+    />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="CSS/SCSS-contul-meu/main-contul-meu.css" />
+    <!-- CSS Formular adauga produs -->
+    <link
+      rel="stylesheet"
+      href="css/SCSS-contul-meu/formular-adauga-produs.css"
+    />
+    <!-- css Documentatie -->
+    <link rel="stylesheet" href="CSS/SCSS-documentatie/SCSS-documentatie.css" />
+    <!-- CSS Fonturi -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconuri -->
+    <link rel="stylesheet" href="ALTELE\icons\style.css" />
+    <!-- Titlu pagina -->
+    <title>Documentație</title>
+    <!-- Icon Tab -->
+    <link rel="icon" href="img/Tab-icons/nea-Ioa.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- START - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+    <div class="top-header-fill"></div>
+    <!-- END - continut pentru umplerea golului pentru ca am dat un top la header si are height = cu top-ul headerului -->
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <!-- START - Header -->
+    <header>
+      <nav class="nav-header">
+        <div class="logo">
+          <a href="contul-meu.html"><span class="icon-logo"></span></a>
+        </div>
+        <div id="search" class="responsive-element">
+          <div id="search-extend" class="search-extend">
+            <div class="icon-search">
+              <div class="for-flex-fill">
+                <span class="icon-fill-search"></span>
+                <span class="icon-cauta"></span>
+              </div>
+            </div>
+            <div class="input">
+              <div class="input-text">
+                <input type="text" placeholder="Search" id="mysearch" />
+              </div>
+              <div
+                class="clear"
+                onclick="document.getElementById('mysearch').value = ''"
+              >
+                <span class="icon-enter"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="menu-bar">
+          <li class="home mid-menu-link">
+            <a class="home" href="index.html"
+              ><span class="icon-home"></span
+            ></a>
+          </li>
+          <li class="galery mid-menu-link">
+            <a class="galery" href="galerie.html"
+              ><span class="icon-galerie"></span
+            ></a>
+          </li>
+          <li class="artist mid-menu-link">
+            <a class="artist" href="artisti.html"
+              ><span class="icon-artist"></span
+            ></a>
+          </li>
+
+          <li id="semnHome" class="semn-home semn-header">
+            <span class="icon-semn-meniu"></span>
+          </li>
+          <li id="semnGalerie" class="semn-galerie semn-header">
+            <span class="icon-semn-meniu"></span>
+          </li>
+          <li id="semnArtist" class="semn-artist semn-header">
+            <span class="icon-semn-meniu"></span>
+          </li>
+        </ul>
+        <div class="hamburgher">
+          <div id="hamburgher">
+            <div class="burger" id="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+        </div>
+        <ul class="responsive-element" id="right-bar">
+          <li class="add-acount head-bar-r">
+            <a href="singup.html"><span class="icon-plus"></span></a>
+          </li>
+          <li class="my-acount head-bar-r right-bar-activ">
+            <a href="log-in.html"><span class="icon-cont"></span></a>
+          </li>
+          <li class="cart head-bar-r">
+            <a href="cos-de-cumparaturi.html"><span class="icon-cos"></span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="separator"></div>
+    </header>
+    <!-- END - Header -->
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <!-- START - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+    <section class="header-fill"></section>
+    <!-- END - continul care umple golul creat de header. height = height-ul TOTAL al  headerului -->
+    <main class="documentatie">
+      <div class="pagina coperta">
+        <h3>
+          Curs Programare Front-End <br />
+          <a href="https://wantsome.ro">WantSome</a>
+        </h3>
+        <h1 class="proiect">Proiect final</h1>
+        <span class="icon-logo"></span>
+        <h2>Magazin de tip E-commerce <br />pentru artiști</h2>
+        <section class="name-section">
+          <div class="indrumator">
+            <p class="nume">Îndrumător de proiect</p>
+            <p id="nume-indrumator">Marius Cătălin Popușoi</p>
+          </div>
+          <div class="absolvent">
+            <p class="nume">Absolvent</p>
+            <p id="nume-absolvent">Iftemie Ovidiu Alexandru</p>
+          </div>
+        </section>
+        <p class="an-locatie">Iași, 2021</p>
+      </div>
+      <div class="pagina cuprins">
+        <h1>Cuprins</h1>
+        <div class="puncte 1.">
+          <h2 class="capitol">1. Scopul proiectului</h2>
+          <h2 class="pagina">3</h2>
+        </div>
+        <div class="puncte 2.">
+          <h2 class="capitol">2. Tehnologii folosite</h2>
+          <h2 class="pagina">4</h2>
+        </div>
+        <div class="puncte subclasa 2.1.">
+          <h2 class="capitol">2.1. HTML</h2>
+          <h2 class="pagina">4</h2>
+        </div>
+        <div class="puncte subclasa 2.2.">
+          <h2 class="capitol">2.2. CSS</h2>
+          <h2 class="pagina">4</h2>
+        </div>
+        <div class="puncte subclasa 2.3.">
+          <h2 class="capitol">2.3. SASS</h2>
+          <h2 class="pagina">4</h2>
+        </div>
+        <div class="puncte subclasa 2.4.">
+          <h2 class="capitol">2.4. JavaScript</h2>
+          <h2 class="pagina">4</h2>
+        </div>
+        <div class="puncte subclasa 2.5.">
+          <h2 class="capitol">2.5. GIT Hub</h2>
+          <h2 class="pagina">4</h2>
+        </div>
+        <div class="puncte 3.">
+          <h2 class="capitol">3. Descrierea aplicație</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa 3.1.">
+          <h2 class="capitol">3.1. Pagini funcționale</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.1.1.">
+          <h2 class="capitol">3.1.1. Pagina Login</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.1.2.">
+          <h2 class="capitol">3.1.2. Pagina Singup</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.1.3.">
+          <h2 class="capitol">3.1.3. Pagina Home</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.1.4.">
+          <h2 class="capitol">3.1.4. Pagina Galerie</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.1.5.">
+          <h2 class="capitol">3.1.5. Pagina Produs</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.1.6.">
+          <h2 class="capitol">3.1.6. Pagina Contul Meu</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.1.7.">
+          <h2 class="capitol">3.1.7. Pagina Artisti</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa 3.2.">
+          <h2 class="capitol">3.2. Pagini nefuncționale</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.2.1">
+          <h2 class="capitol">3.2.1. Pagina Artisti</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte subclasa subsubclasa 3.2.1.">
+          <h2 class="capitol">3.2.1. Coș de cumpărături</h2>
+          <h2 class="pagina">5</h2>
+        </div>
+        <div class="puncte 4.">
+          <h2 class="capitol">4. Disponibilitate</h2>
+          <h2 class="pagina">6</h2>
+        </div>
+        <div class="puncte 5.">
+          <h2 class="capitol">5. Bibliografie</h2>
+          <h2 class="pagina">7</h2>
+        </div>
+      </div>
+      <div class="pagina 3">
+        <h1 class="1.">1. Scopul proiectului</h1>
+        <p>
+          Scopul principal al proiectului este realizarea unui site/unei
+          aplicații web de tip E-commerce ce se adresează în principal
+          iubitorilor de artă și nu numai. Arta fiind de tip „Pictură”, „Artă
+          Digitală”, „Sculptură” și orice obiect „Artizanat” cu o însemnătate
+          deosebită din punct de vedere emoțional cât și al muncii din partea
+          creatorului - Artistului.
+        </p>
+        <p>
+          Pentru o bună funționalitate, aplicția depinde atât de vânzători
+          (artisti) cât și de cumpărători. Vânzătorii își pot „posta” produsele
+          și în funcție de tipul „anunțului” cumpărat pentru un produs, acesta
+          este afișat în diferite dimensiuni în pagina cu produse (Galerie).
+          Totodată ei pot alege și modul în care să vândă opera: vânzare cu preț
+          fix, cu preț negociabil, cu preț licitabil sau cu preț de tip ofertă.
+        </p>
+        <p>
+          Cumpărătorii pot salva produsele ca favorite și, bineînțeles, pot
+          cumpăra produsul dorit sau produsele dorite. În cazul în care sunt mai
+          multe produse se pot face achiziții DOAR DE LA ACELAȘI ARTIST.
+        </p>
+        <p>
+          Avatajele principale ale acestei aplicații, față de alte aplicații de
+          pe piața actuală, sunt:
+          <br />
+          - posibilitatea de a vinde/cumpăra un produs în 4 tipuri de preț: Fix,
+          Negociabil, Licitant, Tip Ofertă;
+          <br />
+          - ca vânzător, posibilitatea de a publica produsul în 4 dimensiuni,
+          fiecare dimensiune având rol de scoatere în evidență a produsului
+          respectiv.
+        </p>
+        <p>
+          Toate produsele adăugate cât și conturile create vor fi salvate într-o
+          „bază de date”, în mometul de față, în localStore.
+        </p>
+      </div>
+      <div class="pagina 4" id="ala">
+        <h1 class="2.">2. Tehnologii folosite</h1>
+        <p>
+          Pentru realizarea acestei aplicații am folosit următoarele: <br />
+          <br />- HTML; <br />- CSS; <br />- SCSS; <br />- JavaScript.
+        </p>
+        <h1 class="2.1.">2.1. HTML</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png"
+          alt="html5"
+        />
+        <h3>Hyper Text Markup Language (HTML)</h3>
+        <p>
+          HTML este limbajul standard de markup folosit pentru a defini
+          structura de bază a unei pagini web. Nu este un limbaj de programare,
+          ci un limbaj descriptiv cu care definim structura paginilor web.
+        </p>
+        <h1 class="2.2.">2.2. CSS</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+          alt="css3"
+        />
+        <h3>Cascading Style Sheets (CSS)</h3>
+        <p>
+          CSS este un limbaj folosit pentru a crea foi de stiluri - stylesheets
+          care descriu felul în care se prezintă vizual un document scris în
+          HTML - de exemplu, pentru a schimba font-ul, culoarea sau mărimea
+          textului, pentru a împărți conținutul în mai multe coloane sau pentru
+          a adăuga animații ori alte particularități ce țin de cromatică -.
+          Versiunea actuală a acestui limbaj este CSS3.
+        </p>
+        <h1 class="2.3.">2.3. SASS</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png"
+          alt="sass"
+        />
+        <h3>Syntactically Awesome Style Sheets (SASS)</h3>
+        <p>CSS with superpowers</p>
+        <p>
+          SASS este un preprocesor CSS, o unealtă care ne permite să generăm cod
+          CSS pe baza unui cod scris într-o sintaxă specificată.
+        </p>
+        <h1 class="2.4.">2.4. JavaScript</h1>
+        <img
+          src="https://www.justapplications.co.uk/wp-content/uploads/2019/12/Javascript-shield-1.png"
+          alt="js"
+        />
+        <h3>JavaScript (JS)</h3>
+        <p>
+          JavaScript este cel mai popular limbaj pentru scripturi şi
+          funcţionează în toate browserele importante, cum ar fi Internet
+          Explorer, Firefox, Chrome, Opera şi Safari. <br />
+          - JavaScript a fost proiectat pentru a adăuga interactivitate
+          paginilor HTML <br />
+          - JavaScript este un limbaj pentru scripturi <br />
+          - Un limbaj pentru scripturi este un limbaj de programare simplificat
+          <br />
+          - JavaScript este, în general, înglobat direct în paginile HTML <br />
+          - JavaScript este un limbaj interpretat (adică scriptul este executat
+          direct, fără compilare prealabilă).
+        </p>
+        <h1 class="2.5.">2.5. GIT Hub</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+          alt="sass"
+        />
+        <h3>GIT Hub</h3>
+        <p>
+          GIT Hub este o platformă online ce se laudă cu:
+          <br />- cel mai popular version control system; <br />- dezvoltat de
+          catre Linus Torvalds, creatorul Linux <br />- este un sistem de
+          versionare distribuit, ceea ce inseamna ca fiecare membru al unui
+          repository care tine intreg codul corespunzator unei aplicatii, poate
+          avea o copie locala a acestuia, complet functionala; acest lucru
+          permite lucrul la distanta sau offline: schimbarile asupra codului se
+          fac local pentru ca ulterior sa fie sincronizate cu cele din
+          repository-ul principal, de pe server <br />- toate modificarile sunt
+          stocate sub forma unui arbore, fiecare modificare este numita commit
+        </p>
+      </div>
+      <div class="pagina"></div>
+      <div class="pagina"></div>
+      <div class="pagina bibliografie"></div>
+    </main>
+    <script
+      type="text/javascript"
+      src="js/JS-elemente-comune/header-right-bar-responsive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/JS-elemente-comune/search-box.js"
+    ></script>
+  </body>
+</html>

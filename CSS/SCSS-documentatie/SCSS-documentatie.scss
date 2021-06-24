@@ -1,0 +1,146 @@
+@import "../SCSS-imports/culori";
+@import "../SCSS-imports/extend";
+@import "../SCSS-imports/responsive";
+@import "../SCSS-imports/dimensiuni";
+
+main.documentatie {
+  padding: 5mm 0;
+  width: 100vw;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+  position: relative;
+
+  div#ala {
+    justify-content: flex-start;
+  }
+
+  div.pagina {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    background-color: $alb;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 4rem -3rem $ton;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20mm;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $contrast;
+      border-radius: 0.25rem;
+    }
+    img {
+      max-width: 20rem;
+      max-height: 23rem;
+    }
+    h3 {
+      position: relative;
+      font-size: 2rem;
+      padding-bottom: 10mm;
+      text-align: center;
+    }
+    h1 {
+      position: relative;
+      font-size: 4rem;
+      padding-bottom: 10mm;
+      width: 100%;
+      &::first-letter {
+        margin-left: 10rem;
+      }
+      &.proiect {
+        text-align: center;
+        &::first-letter {
+          margin-left: 0rem;
+        }
+      }
+    }
+    h2 {
+      position: relative;
+      font-size: 3rem;
+      text-align: center;
+      padding-bottom: 10mm;
+    }
+    p {
+      font-size: 2rem;
+      //   text-justify: distribute-all-lines;
+      padding-bottom: 1rem;
+      &::first-letter {
+        margin-left: 5rem;
+      }
+    }
+    &.coperta {
+      justify-content: space-around;
+      span {
+        position: relative;
+        font-size: 20rem;
+        padding-bottom: 5mm;
+      }
+      section {
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        gap: 5mm;
+        font-size: 1.5rem;
+        div {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p.nume {
+            position: relative;
+            font-style: italic;
+            padding-bottom: 2mm;
+          }
+        }
+      }
+    }
+    &.cuprins {
+      div.puncte {
+        position: relative;
+        width: 100%;
+        height: 5mm;
+        margin: 2.5mm 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1mm dotted $ton;
+        h2 {
+          position: relative;
+          font-weight: 300;
+          padding: 0;
+          background-color: $alb;
+          padding: 0 3mm;
+        }
+        &.subclasa {
+          width: 90%;
+          align-self: flex-end;
+          h2.capitol {
+            font-size: 2.7rem;
+          }
+        }
+        &.subsubclasa {
+          width: 80%;
+          align-self: flex-end;
+          h2.capitol {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
