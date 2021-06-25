@@ -37,6 +37,7 @@ main {
       font-size: 15rem;
     }
     form.formular {
+      position: relative;
       padding: 0.5rem 5rem 6.5rem 5rem;
       a {
         &.forgotPass {
@@ -72,6 +73,23 @@ main {
         }
         &.rem {
           text-decoration: underline;
+        }
+      }
+      div#vizibilitate-parola {
+        cursor: pointer;
+        position: absolute;
+        width: 2rem;
+        height: 1.5rem;
+        background-color: lightgray;
+        border: 0.1rem solid $separator;
+        border-radius: 50%;
+        right: 6rem;
+        top: 11rem;
+        &:hover {
+          background-color: $header;
+        }
+        &.activ {
+          background-color: $header;
         }
       }
       input {
