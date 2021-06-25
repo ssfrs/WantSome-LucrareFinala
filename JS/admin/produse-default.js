@@ -684,8 +684,6 @@
         
     ];
 
-    let conturiDefault = [];
-
     butonGoleste_LP.onclick = function() {
         let listaProduse = [];
         localStorage.setItem('ListaProduse', JSON.stringify(listaProduse));
@@ -695,31 +693,5 @@
         let listaProduse = produseDefault;
         localStorage.setItem('ListaProduse', JSON.stringify(listaProduse));
     };
-
-    butonGoleste_LC.onclick = function() {
-        listaConturi = [];
-        localStorage.setItem('ListaConturi', JSON.stringify(listaConturi));
-    };
-
-    butonSetare_LCD.onclick = function() {
-        listaConturi = conturiDefault;
-        localStorage.setItem('ListaConturi', JSON.stringify(listaConturi));
-    };
-
-    // for (produs of produseDefault) {
-    //     listaProduse = JSON.parse(localStorage.getItem('ListaProduse'));
-    //     listaProduse.push(produs);
-    //     localStorage.setItem('ListaProduse', JSON.stringify(listaProduse));
-    // }
-
-    // listaProduse = JSON.parse(localStorage.getItem('ListaProduse'));
-    // console.log(listaProduse);
-    // listaProduse.splice(10, 5);
-    // console.log(listaProduse);
-    // listaProduse.splice(10, 5);
-    // console.log(listaProduse);
-    // listaProduse.splice(10, 2);
-    // console.log(listaProduse);
-    // localStorage.setItem('ListaProduse', JSON.stringify(listaProduse));
 
 }
