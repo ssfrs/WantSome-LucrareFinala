@@ -19,6 +19,29 @@ main.documentatie {
   div#bala {
     justify-content: flex-start;
   }
+  div#cuprins {
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+    background-color: $separator;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 10;
+    right: 10rem;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: $alb;
+    transform: rotateZ(90deg);
+    &:hover {
+      background-color: $header;
+    }
+    span {
+      padding-right: 1rem;
+    }
+  }
 
   div.pagina {
     position: relative;
@@ -135,6 +158,7 @@ main.documentatie {
     }
     &.cuprins {
       div.puncte {
+        cursor: pointer;
         position: relative;
         width: 100%;
         height: 5mm;
